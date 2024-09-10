@@ -1,0 +1,99 @@
+volumes:
+  prometheus_data: {}
+  grafana_data: {}
+  runner_logs:
+      driver: local
+      driver_opts:
+        type: none
+        o: bind
+        device: /var/lib/docker/volumes/idavid_adediji_runner_logs/_data
+
+services:
+  runner:
+    image: ayomided/action-runner-image:0.0.1b
+    networks:
+      - monitoring
+    restart: always
+    environment:
+      - REPO=${REPO}
+      - TOKEN=${GH_TOKEN}
+    volumes:
+      - runner_logs:/var/log/github-runner:rw
+    deploy:
+      mode: replicated
+      replicas: 4
+      resources:
+        limits:
+          cpus: '1.0'
+          memory: 2G
+        reservations:
+          cpus: '0.5'
+          memory: 1G
+
+  log_exporter:
+    image: ayomided/log-exporter:0.0.1a
+    container_name: log_exporter
+    pull_policy: always
+    networks:
+      - monitoring
+    volumes:
+      - runner_logs:/var/log/github-runner:ro
+    environment:
+      - LOG_PATHS=/var/log/github-runner/runner.log
+    ports:
+      - "9110:9110"
+
+  prometheus:
+    image: prom/prometheus:latest
+    networks:
+      - monitoring
+    container_name: prometheus
+    ports:
+    - 9090:9090
+    command:
+    - '--config.file=/etc/prometheus/prometheus.yml'
+    - '--storage.tsdb.path=/prometheus'
+    volumes:
+    - prometheus_data:/prometheus
+    - ./prometheus.yml:/etc/prometheus/prometheus.yml:ro
+    depends_on:
+    - cadvisor
+    - log_exporter
+
+  cadvisor:
+    image: gcr.io/cadvisor/cadvisor:latest
+    networks:
+      - monitoring
+    container_name: cadvisor
+    ports:
+    - 8080:8080
+    volumes:
+    - /:/rootfs:ro
+    - /var/run:/var/run:rw
+    - /sys:/sys:ro
+    - /var/lib/docker/:/var/lib/docker:ro
+    depends_on:
+    - runner
+
+  grafana:
+    image: grafana/grafana
+    networks:
+      - monitoring
+    environment:
+      GF_SECURITY_DISABLE_INITIAL_ADMIN_CREATION: "true"
+      GF_AUTH_ANONYMOUS_ENABLED: "true"
+      GF_AUTH_ANONYMOUS_ORG_ROLE: "Admin"
+      GF_AUTH_DISABLE_SIGNOUT_MENU: "true"
+      GF_AUTH_DISABLE_LOGIN_FORM: "true"
+    volumes:
+      - ./dashboards:/etc/grafana/provisioning/dashboards
+      - ./datasources:/etc/grafana/provisioning/datasources
+      - grafana_data:/var/lib/grafana
+    ports:
+      - "9100:3000"
+    depends_on:
+      - prometheus
+
+networks:
+  monitoring:
+    driver: bridge

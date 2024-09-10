@@ -1,0 +1,16 @@
+# This must be in the same directory as the docker-compose
+# OR in the path as declared in the docker-compose volume
+
+global:
+  scrape_interval: 15s
+scrape_configs:
+  - job_name: 'log_exporter'
+    scrape_interval: 10s
+    static_configs:
+      - targets: ['log_exporter:9110']
+  - job_name: 'cadvisor'
+    static_configs:
+      - targets: ['cadvisor:8080']
+  - job_name: 'prometheus'
+    static_configs:
+      - targets: ['prometheus:9090']
