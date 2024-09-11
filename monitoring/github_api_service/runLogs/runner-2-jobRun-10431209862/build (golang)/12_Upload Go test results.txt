@@ -1,0 +1,19 @@
+2024-08-17T09:22:56.2676336Z ##[group]Run actions/upload-artifact@v4
+2024-08-17T09:22:56.2677424Z with:
+2024-08-17T09:22:56.2677984Z   name: Go-results
+2024-08-17T09:22:56.2678712Z   path: go-app/GoTestResults.json
+2024-08-17T09:22:56.2679565Z   if-no-files-found: warn
+2024-08-17T09:22:56.2860923Z   compression-level: 6
+2024-08-17T09:22:56.2861709Z   overwrite: false
+2024-08-17T09:22:56.2862275Z ##[endgroup]
+2024-08-17T09:22:57.9424295Z With the provided path, there will be 1 file uploaded
+2024-08-17T09:22:57.9537310Z Artifact name is valid!
+2024-08-17T09:22:57.9585769Z Root directory input is valid!
+2024-08-17T09:22:58.7181730Z Beginning upload of artifact content to blob storage
+2024-08-17T09:22:59.0576794Z Uploaded bytes 890
+2024-08-17T09:22:59.1191995Z Finished uploading artifact content to blob storage!
+2024-08-17T09:22:59.1229267Z SHA256 hash of uploaded artifact zip is fcd976772d3d5a1008d0b097d4ddac03d8a614871dca6f8a7ebcdb7bfb0af5c8
+2024-08-17T09:22:59.1257281Z Finalizing artifact upload
+2024-08-17T09:22:59.2324124Z Artifact Go-results.zip successfully finalized. Artifact ID 1822731827
+2024-08-17T09:22:59.2346402Z Artifact Go-results has been successfully uploaded! Final size is 890 bytes. Artifact ID is 1822731827
+2024-08-17T09:22:59.2368877Z Artifact download URL: https://github.com/Ayomided/ci-cd-performance-benchmark/actions/runs/10431209862/artifacts/1822731827

@@ -1,0 +1,16 @@
+2024-08-17T09:22:55.0809809Z ##[group]Run actions/cache@v3
+2024-08-17T09:22:55.0811063Z with:
+2024-08-17T09:22:55.0811925Z   path: ./.venv
+2024-08-17T09:22:55.0812525Z   key: venv-
+2024-08-17T09:22:55.0813322Z   enableCrossOsArchive: false
+2024-08-17T09:22:55.0814361Z   fail-on-cache-miss: false
+2024-08-17T09:22:55.0815163Z   lookup-only: false
+2024-08-17T09:22:55.0816254Z env:
+2024-08-17T09:22:55.0817475Z   pythonLocation: /home/docker/actions-runner/_work/_tool/Python/3.12.4/x64
+2024-08-17T09:22:55.0819506Z   PKG_CONFIG_PATH: /home/docker/actions-runner/_work/_tool/Python/3.12.4/x64/lib/pkgconfig
+2024-08-17T09:22:55.0821517Z   Python_ROOT_DIR: /home/docker/actions-runner/_work/_tool/Python/3.12.4/x64
+2024-08-17T09:22:55.0908841Z   Python2_ROOT_DIR: /home/docker/actions-runner/_work/_tool/Python/3.12.4/x64
+2024-08-17T09:22:55.0911733Z   Python3_ROOT_DIR: /home/docker/actions-runner/_work/_tool/Python/3.12.4/x64
+2024-08-17T09:22:55.0914123Z   LD_LIBRARY_PATH: /home/docker/actions-runner/_work/_tool/Python/3.12.4/x64/lib
+2024-08-17T09:22:55.0916694Z ##[endgroup]
+2024-08-17T09:22:56.2112435Z Cache not found for input keys: venv-

@@ -1,0 +1,303 @@
+2024-08-17T09:22:22.2542104Z Requested labels: self-hosted
+2024-08-17T09:22:22.2542361Z Job defined at: Ayomided/ci-cd-performance-benchmark/.github/workflows/build-test-deploy.yml@refs/heads/main
+2024-08-17T09:22:22.2542438Z Waiting for a runner to pick up this job...
+2024-08-17T09:22:23.2719173Z Job is about to start running on the runner: 4e41fc95d09d (repository)
+2024-08-17T09:22:35.5956569Z Current runner version: '2.319.1'
+2024-08-17T09:22:35.6043115Z Runner name: '4e41fc95d09d'
+2024-08-17T09:22:35.6044683Z Runner group name: 'Default'
+2024-08-17T09:22:35.6046243Z Machine name: '4e41fc95d09d'
+2024-08-17T09:22:35.6126631Z Testing runner upgrade compatibility
+2024-08-17T09:22:36.4109662Z ##[group]GITHUB_TOKEN Permissions
+2024-08-17T09:22:36.4114070Z Contents: read
+2024-08-17T09:22:36.4114978Z Metadata: read
+2024-08-17T09:22:36.4116071Z Packages: read
+2024-08-17T09:22:36.4117023Z ##[endgroup]
+2024-08-17T09:22:36.4212521Z Secret source: Actions
+2024-08-17T09:22:36.4308036Z Prepare workflow directory
+2024-08-17T09:22:37.1725130Z Prepare all required actions
+2024-08-17T09:22:37.2466856Z Getting action download info
+2024-08-17T09:22:37.4815253Z Download action repository 'actions/checkout@v4' (SHA:692973e3d937129bcbf40652eb9f2f61becf3332)
+2024-08-17T09:22:38.0174847Z Download action repository 'actions/setup-go@v5' (SHA:0a12ed9d6a96ab950c8f026ed9f722fe0da7ef32)
+2024-08-17T09:22:38.6638111Z Download action repository 'actions/setup-python@v4' (SHA:65d7f2d534ac1bc67fcd62888c5f4f3d2cb2b236)
+2024-08-17T09:22:39.2481580Z Download action repository 'actions/setup-java@v4' (SHA:6a0805fcefea3d4657a47ac4c165951e33482018)
+2024-08-17T09:22:39.9333703Z Download action repository 'actions/cache@v3' (SHA:e12d46a63a90f2fae62d114769bbf2a179198b5c)
+2024-08-17T09:22:40.7523320Z Download action repository 'stCarolas/setup-maven@v5' (SHA:d6af6abeda15e98926a57b5aa970a96bb37f97d1)
+2024-08-17T09:22:44.0663060Z Download action repository 'actions/upload-artifact@v4' (SHA:834a144ee995460fba8ed112a2fc961b36a5ec5a)
+2024-08-17T09:22:45.1703928Z Complete job name: build (java)
+2024-08-17T09:22:45.5130091Z ##[group]Run actions/checkout@v4
+2024-08-17T09:22:45.5131272Z with:
+2024-08-17T09:22:45.5132205Z   repository: Ayomided/ci-cd-performance-benchmark
+2024-08-17T09:22:45.5133946Z   token: ***
+2024-08-17T09:22:45.5134613Z   ssh-strict: true
+2024-08-17T09:22:45.5135277Z   ssh-user: git
+2024-08-17T09:22:45.5135974Z   persist-credentials: true
+2024-08-17T09:22:45.5136708Z   clean: true
+2024-08-17T09:22:45.5137414Z   sparse-checkout-cone-mode: true
+2024-08-17T09:22:45.5138189Z   fetch-depth: 1
+2024-08-17T09:22:45.5138784Z   fetch-tags: false
+2024-08-17T09:22:45.5139387Z   show-progress: true
+2024-08-17T09:22:45.5140083Z   lfs: false
+2024-08-17T09:22:45.5140802Z   submodules: false
+2024-08-17T09:22:45.5141468Z   set-safe-directory: true
+2024-08-17T09:22:45.5142377Z ##[endgroup]
+2024-08-17T09:22:47.0432051Z Syncing repository: Ayomided/ci-cd-performance-benchmark
+2024-08-17T09:22:47.0436830Z ##[group]Getting Git version info
+2024-08-17T09:22:47.0439609Z Working directory is '/home/docker/actions-runner/_work/ci-cd-performance-benchmark/ci-cd-performance-benchmark'
+2024-08-17T09:22:47.0442745Z ##[endgroup]
+2024-08-17T09:22:47.0444808Z Deleting the contents of '/home/docker/actions-runner/_work/ci-cd-performance-benchmark/ci-cd-performance-benchmark'
+2024-08-17T09:22:47.0447141Z The repository will be downloaded using the GitHub REST API
+2024-08-17T09:22:47.0448889Z To create a local Git repository instead, add Git 2.18 or higher to the PATH
+2024-08-17T09:22:47.0450267Z Downloading the archive
+2024-08-17T09:22:48.1749737Z Writing archive to disk
+2024-08-17T09:22:48.2156760Z Extracting the archive
+2024-08-17T09:22:48.2595692Z [command]/usr/bin/tar xz --warning=no-unknown-keyword --overwrite -C /home/docker/actions-runner/_work/ci-cd-performance-benchmark/ci-cd-performance-benchmark/648b33f0-ed7e-482c-a8ab-ecaefb3e46b3 -f /home/docker/actions-runner/_work/ci-cd-performance-benchmark/ci-cd-performance-benchmark/648b33f0-ed7e-482c-a8ab-ecaefb3e46b3.tar.gz
+2024-08-17T09:22:48.4955080Z Resolved version Ayomided-ci-cd-performance-benchmark-0aea2f98e01e20d21aaddf3477fda4ec8853f2a7
+2024-08-17T09:22:48.6735614Z ##[group]Run actions/setup-java@v4
+2024-08-17T09:22:48.6736814Z with:
+2024-08-17T09:22:48.6737609Z   java-version: 22
+2024-08-17T09:22:48.6738492Z   distribution: oracle
+2024-08-17T09:22:48.6739471Z   java-package: jdk
+2024-08-17T09:22:48.6740369Z   check-latest: false
+2024-08-17T09:22:48.6741912Z   server-id: github
+2024-08-17T09:22:48.6742866Z   server-username: GITHUB_ACTOR
+2024-08-17T09:22:48.6744018Z   server-password: GITHUB_TOKEN
+2024-08-17T09:22:48.6745145Z   overwrite-settings: true
+2024-08-17T09:22:48.6746171Z   job-status: success
+2024-08-17T09:22:48.6747593Z   token: ***
+2024-08-17T09:22:48.6748371Z ##[endgroup]
+2024-08-17T09:22:49.4134146Z ##[group]Installed distributions
+2024-08-17T09:22:49.4316939Z Trying to resolve the latest version from remote
+2024-08-17T09:22:49.7305193Z Resolved latest version as 22
+2024-08-17T09:22:49.7306891Z Trying to download...
+2024-08-17T09:22:49.7310116Z Downloading Java 22 (Oracle) from https://download.oracle.com/java/22/latest/jdk-22_linux-x64_bin.tar.gz ...
+2024-08-17T09:22:55.6236808Z Extracting Java archive...
+2024-08-17T09:22:55.6872714Z [command]/usr/bin/tar xz --warning=no-unknown-keyword --overwrite -C /home/docker/actions-runner/_work/_temp/30fafb19-9d2d-471a-85fa-b3a28e2583e5 -f /home/docker/actions-runner/_work/_temp/d8ac3d76-c455-4488-9d03-43be2394e32e
+2024-08-17T09:23:10.4587355Z Java 22 was downloaded
+2024-08-17T09:23:10.4627624Z Setting Java 22 as the default
+2024-08-17T09:23:10.4667329Z Creating toolchains.xml for JDK version 22 from oracle
+2024-08-17T09:23:10.4997179Z Overwriting existing file /home/docker/.m2/toolchains.xml
+2024-08-17T09:23:10.4999188Z 
+2024-08-17T09:23:10.5009314Z Java configuration:
+2024-08-17T09:23:10.5010435Z   Distribution: oracle
+2024-08-17T09:23:10.5011741Z   Version: 22
+2024-08-17T09:23:10.5013693Z   Path: /home/docker/actions-runner/_work/_tool/Java_Oracle_jdk/22/x64
+2024-08-17T09:23:10.5015108Z 
+2024-08-17T09:23:10.5016567Z ##[endgroup]
+2024-08-17T09:23:10.5190889Z Creating settings.xml with server-id: github
+2024-08-17T09:23:10.5207688Z Overwriting existing file /home/docker/.m2/settings.xml
+2024-08-17T09:23:10.5367404Z ##[group]Run stCarolas/setup-maven@v5
+2024-08-17T09:23:10.5368056Z with:
+2024-08-17T09:23:10.5368686Z   maven-version: 3.9.8
+2024-08-17T09:23:10.5369274Z env:
+2024-08-17T09:23:10.5370033Z   JAVA_HOME: /home/docker/actions-runner/_work/_tool/Java_Oracle_jdk/22/x64
+2024-08-17T09:23:10.5371360Z   JAVA_HOME_22_X64: /home/docker/actions-runner/_work/_tool/Java_Oracle_jdk/22/x64
+2024-08-17T09:23:10.5372315Z ##[endgroup]
+2024-08-17T09:23:10.6978624Z ##[group]Run cd java-app
+2024-08-17T09:23:10.6980195Z [36;1mcd java-app[0m
+2024-08-17T09:23:10.6981266Z [36;1mmvn install[0m
+2024-08-17T09:23:10.6982030Z [36;1mmvn test[0m
+2024-08-17T09:23:10.7004172Z shell: /usr/bin/bash -e {0}
+2024-08-17T09:23:10.7004924Z env:
+2024-08-17T09:23:10.7005689Z   JAVA_HOME: /home/docker/actions-runner/_work/_tool/Java_Oracle_jdk/22/x64
+2024-08-17T09:23:10.7006936Z   JAVA_HOME_22_X64: /home/docker/actions-runner/_work/_tool/Java_Oracle_jdk/22/x64
+2024-08-17T09:23:10.7007884Z ##[endgroup]
+2024-08-17T09:23:16.3840634Z [INFO] Scanning for projects...
+2024-08-17T09:23:17.8969036Z [INFO] 
+2024-08-17T09:23:17.8981790Z [INFO] -----------------------< com.ayomided:java-app >------------------------
+2024-08-17T09:23:17.9002760Z [INFO] Building java-app 0.0.1-SNAPSHOT
+2024-08-17T09:23:17.9079620Z [INFO]   from pom.xml
+2024-08-17T09:23:17.9092386Z [INFO] --------------------------------[ jar ]---------------------------------
+2024-08-17T09:23:19.8878901Z [INFO] 
+2024-08-17T09:23:19.8881530Z [INFO] --- resources:3.3.1:resources (default-resources) @ java-app ---
+2024-08-17T09:23:20.5803654Z [INFO] Copying 1 resource from src/main/resources to target/classes
+2024-08-17T09:23:20.6229590Z [INFO] Copying 0 resource from src/main/resources to target/classes
+2024-08-17T09:23:20.6250637Z [INFO] 
+2024-08-17T09:23:20.6257419Z [INFO] --- compiler:3.13.0:compile (default-compile) @ java-app ---
+2024-08-17T09:23:21.2881239Z [INFO] Recompiling the module because of changed source code.
+2024-08-17T09:23:21.3130048Z [INFO] Compiling 4 source files with javac [debug parameters release 21] to target/classes
+2024-08-17T09:23:24.0826296Z [INFO] 
+2024-08-17T09:23:24.0846050Z [INFO] --- resources:3.3.1:testResources (default-testResources) @ java-app ---
+2024-08-17T09:23:24.1123275Z [INFO] skip non existing resourceDirectory /home/docker/actions-runner/_work/ci-cd-performance-benchmark/ci-cd-performance-benchmark/java-app/src/test/resources
+2024-08-17T09:23:24.1126977Z [INFO] 
+2024-08-17T09:23:24.1129334Z [INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ java-app ---
+2024-08-17T09:23:24.1381445Z [INFO] Recompiling the module because of changed dependency.
+2024-08-17T09:23:24.1802444Z [INFO] Compiling 2 source files with javac [debug parameters release 21] to target/test-classes
+2024-08-17T09:23:25.6941370Z [INFO] 
+2024-08-17T09:23:25.6962672Z [INFO] --- surefire:3.2.5:test (default-test) @ java-app ---
+2024-08-17T09:23:26.9964605Z [INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+2024-08-17T09:23:27.2228352Z [INFO] 
+2024-08-17T09:23:27.2230675Z [INFO] -------------------------------------------------------
+2024-08-17T09:23:27.2232394Z [INFO]  T E S T S
+2024-08-17T09:23:27.2234157Z [INFO] -------------------------------------------------------
+2024-08-17T09:23:29.3235832Z [INFO] Running com.ayomided.java_app.controller.PlayerServerTest
+2024-08-17T09:23:30.0072696Z 09:23:29.931 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.ayomided.java_app.controller.PlayerServerTest]: PlayerServerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-08-17T09:23:30.5069964Z 09:23:30.445 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.ayomided.java_app.JavaAppApplication for test class com.ayomided.java_app.controller.PlayerServerTest
+2024-08-17T09:23:31.9069835Z 
+2024-08-17T09:23:31.9070911Z   .   ____          _            __ _ _
+2024-08-17T09:23:31.9072581Z  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+2024-08-17T09:23:31.9073811Z ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+2024-08-17T09:23:31.9074921Z  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+2024-08-17T09:23:31.9076071Z   '  |____| .__|_| |_|_| |_\__, | / / / /
+2024-08-17T09:23:31.9077032Z  =========|_|==============|___/=/_/_/_/
+2024-08-17T09:23:31.9077726Z 
+2024-08-17T09:23:32.1069332Z  :: Spring Boot ::                (v3.3.2)
+2024-08-17T09:23:32.1070785Z 
+2024-08-17T09:23:32.3076286Z 2024-08-17 09:23:32 - Starting PlayerServerTest using Java 22.0.2 with PID 25878 (started by docker in /home/docker/actions-runner/_work/ci-cd-performance-benchmark/ci-cd-performance-benchmark/java-app)
+2024-08-17T09:23:32.3081407Z 2024-08-17 09:23:32 - Running with Spring Boot v3.3.2, Spring v6.1.11
+2024-08-17T09:23:32.3083894Z 2024-08-17 09:23:32 - No active profile set, falling back to 1 default profile: "default"
+2024-08-17T09:23:35.8874234Z Java HotSpot(TM) 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+2024-08-17T09:23:35.9255519Z WARNING: A Java agent has been loaded dynamically (/home/docker/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.18/byte-buddy-agent-1.14.18.jar)
+2024-08-17T09:23:35.9260207Z WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+2024-08-17T09:23:35.9264135Z WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+2024-08-17T09:23:35.9267116Z WARNING: Dynamic loading of agents will be disallowed by default in a future release
+2024-08-17T09:23:42.6013112Z 2024-08-17 09:23:42 - Initializing Spring TestDispatcherServlet ''
+2024-08-17T09:23:42.6015651Z 2024-08-17 09:23:42 - Initializing Servlet ''
+2024-08-17T09:23:42.6017634Z 2024-08-17 09:23:42 - Completed initialization in 1 ms
+2024-08-17T09:23:42.6997025Z 2024-08-17 09:23:42 - Started PlayerServerTest in 11.675 seconds (process running for 15.161)
+2024-08-17T09:23:43.7636659Z [INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 14.11 s -- in com.ayomided.java_app.controller.PlayerServerTest
+2024-08-17T09:23:43.7640897Z [INFO] Running com.ayomided.java_app.JavaAppApplicationTests
+2024-08-17T09:23:43.7647195Z 2024-08-17 09:23:43 - Could not detect default configuration classes for test class [com.ayomided.java_app.JavaAppApplicationTests]: JavaAppApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-08-17T09:23:43.7655298Z 2024-08-17 09:23:43 - Found @SpringBootConfiguration com.ayomided.java_app.JavaAppApplication for test class com.ayomided.java_app.JavaAppApplicationTests
+2024-08-17T09:23:43.9200258Z 
+2024-08-17T09:23:43.9201680Z   .   ____          _            __ _ _
+2024-08-17T09:23:43.9203939Z  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+2024-08-17T09:23:43.9205129Z ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+2024-08-17T09:23:43.9207873Z  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+2024-08-17T09:23:43.9209096Z   '  |____| .__|_| |_|_| |_\__, | / / / /
+2024-08-17T09:23:43.9210056Z  =========|_|==============|___/=/_/_/_/
+2024-08-17T09:23:43.9211715Z 
+2024-08-17T09:23:43.9216879Z  :: Spring Boot ::                (v3.3.2)
+2024-08-17T09:23:43.9217690Z 
+2024-08-17T09:23:43.9220938Z 2024-08-17 09:23:43 - Starting JavaAppApplicationTests using Java 22.0.2 with PID 25878 (started by docker in /home/docker/actions-runner/_work/ci-cd-performance-benchmark/ci-cd-performance-benchmark/java-app)
+2024-08-17T09:23:43.9225104Z 2024-08-17 09:23:43 - Running with Spring Boot v3.3.2, Spring v6.1.11
+2024-08-17T09:23:43.9227523Z 2024-08-17 09:23:43 - No active profile set, falling back to 1 default profile: "default"
+2024-08-17T09:23:45.6012517Z 2024-08-17 09:23:45 - Started JavaAppApplicationTests in 1.914 seconds (process running for 18.066)
+2024-08-17T09:23:45.7049643Z [INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.104 s -- in com.ayomided.java_app.JavaAppApplicationTests
+2024-08-17T09:23:45.8221435Z [INFO] 
+2024-08-17T09:23:45.8239442Z [INFO] Results:
+2024-08-17T09:23:45.8240617Z [INFO] 
+2024-08-17T09:23:45.8241623Z [INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0
+2024-08-17T09:23:45.8242802Z [INFO] 
+2024-08-17T09:23:45.8274885Z [INFO] 
+2024-08-17T09:23:45.8276965Z [INFO] --- jar:3.4.2:jar (default-jar) @ java-app ---
+2024-08-17T09:23:47.1343013Z [INFO] Building jar: /home/docker/actions-runner/_work/ci-cd-performance-benchmark/ci-cd-performance-benchmark/java-app/target/java-app-0.0.1-SNAPSHOT.jar
+2024-08-17T09:23:47.4233785Z [INFO] 
+2024-08-17T09:23:47.4245044Z [INFO] --- spring-boot:3.3.2:repackage (repackage) @ java-app ---
+2024-08-17T09:23:49.1072048Z [INFO] Replacing main artifact /home/docker/actions-runner/_work/ci-cd-performance-benchmark/ci-cd-performance-benchmark/java-app/target/java-app-0.0.1-SNAPSHOT.jar with repackaged archive, adding nested dependencies in BOOT-INF/.
+2024-08-17T09:23:49.1090751Z [INFO] The original artifact has been renamed to /home/docker/actions-runner/_work/ci-cd-performance-benchmark/ci-cd-performance-benchmark/java-app/target/java-app-0.0.1-SNAPSHOT.jar.original
+2024-08-17T09:23:49.1105955Z [INFO] 
+2024-08-17T09:23:49.1116467Z [INFO] --- install:3.1.2:install (default-install) @ java-app ---
+2024-08-17T09:23:49.2923740Z [INFO] Installing /home/docker/actions-runner/_work/ci-cd-performance-benchmark/ci-cd-performance-benchmark/java-app/pom.xml to /home/docker/.m2/repository/com/ayomided/java-app/0.0.1-SNAPSHOT/java-app-0.0.1-SNAPSHOT.pom
+2024-08-17T09:23:49.2996212Z [INFO] Installing /home/docker/actions-runner/_work/ci-cd-performance-benchmark/ci-cd-performance-benchmark/java-app/target/java-app-0.0.1-SNAPSHOT.jar to /home/docker/.m2/repository/com/ayomided/java-app/0.0.1-SNAPSHOT/java-app-0.0.1-SNAPSHOT.jar
+2024-08-17T09:23:49.6101699Z [INFO] ------------------------------------------------------------------------
+2024-08-17T09:23:49.6122600Z [INFO] BUILD SUCCESS
+2024-08-17T09:23:49.6128750Z [INFO] ------------------------------------------------------------------------
+2024-08-17T09:23:49.6159265Z [INFO] Total time:  33.406 s
+2024-08-17T09:23:49.6172328Z [INFO] Finished at: 2024-08-17T09:23:49Z
+2024-08-17T09:23:49.6178275Z [INFO] ------------------------------------------------------------------------
+2024-08-17T09:23:54.3949241Z [INFO] Scanning for projects...
+2024-08-17T09:23:55.5948948Z [INFO] 
+2024-08-17T09:23:55.5961787Z [INFO] -----------------------< com.ayomided:java-app >------------------------
+2024-08-17T09:23:55.5965727Z [INFO] Building java-app 0.0.1-SNAPSHOT
+2024-08-17T09:23:55.5977336Z [INFO]   from pom.xml
+2024-08-17T09:23:55.5988000Z [INFO] --------------------------------[ jar ]---------------------------------
+2024-08-17T09:23:56.9928489Z [INFO] 
+2024-08-17T09:23:56.9932749Z [INFO] --- resources:3.3.1:resources (default-resources) @ java-app ---
+2024-08-17T09:23:57.4964994Z [INFO] Copying 1 resource from src/main/resources to target/classes
+2024-08-17T09:23:57.7177447Z [INFO] Copying 0 resource from src/main/resources to target/classes
+2024-08-17T09:23:57.7217548Z [INFO] 
+2024-08-17T09:23:57.7220839Z [INFO] --- compiler:3.13.0:compile (default-compile) @ java-app ---
+2024-08-17T09:23:58.2868247Z [INFO] Nothing to compile - all classes are up to date.
+2024-08-17T09:23:58.2877801Z [INFO] 
+2024-08-17T09:23:58.2885285Z [INFO] --- resources:3.3.1:testResources (default-testResources) @ java-app ---
+2024-08-17T09:23:58.2959224Z [INFO] skip non existing resourceDirectory /home/docker/actions-runner/_work/ci-cd-performance-benchmark/ci-cd-performance-benchmark/java-app/src/test/resources
+2024-08-17T09:23:58.2963038Z [INFO] 
+2024-08-17T09:23:58.2967170Z [INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ java-app ---
+2024-08-17T09:23:58.3232412Z [INFO] Nothing to compile - all classes are up to date.
+2024-08-17T09:23:58.3236135Z [INFO] 
+2024-08-17T09:23:58.3238483Z [INFO] --- surefire:3.2.5:test (default-test) @ java-app ---
+2024-08-17T09:23:59.3832777Z [INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+2024-08-17T09:23:59.5982008Z [INFO] 
+2024-08-17T09:23:59.5984024Z [INFO] -------------------------------------------------------
+2024-08-17T09:23:59.5985657Z [INFO]  T E S T S
+2024-08-17T09:23:59.5987428Z [INFO] -------------------------------------------------------
+2024-08-17T09:24:01.6999680Z [INFO] Running com.ayomided.java_app.controller.PlayerServerTest
+2024-08-17T09:24:02.3926153Z 09:24:02.293 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.ayomided.java_app.controller.PlayerServerTest]: PlayerServerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-08-17T09:24:03.0948176Z 09:24:03.029 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.ayomided.java_app.JavaAppApplication for test class com.ayomided.java_app.controller.PlayerServerTest
+2024-08-17T09:24:04.7174704Z 
+2024-08-17T09:24:04.7176263Z   .   ____          _            __ _ _
+2024-08-17T09:24:04.7178059Z  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+2024-08-17T09:24:04.7179446Z ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+2024-08-17T09:24:04.7180722Z  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+2024-08-17T09:24:04.7305631Z   '  |____| .__|_| |_|_| |_\__, | / / / /
+2024-08-17T09:24:04.7306680Z  =========|_|==============|___/=/_/_/_/
+2024-08-17T09:24:04.7307305Z 
+2024-08-17T09:24:04.9242301Z  :: Spring Boot ::                (v3.3.2)
+2024-08-17T09:24:04.9243802Z 
+2024-08-17T09:24:05.1222648Z 2024-08-17 09:24:05 - Starting PlayerServerTest using Java 22.0.2 with PID 25960 (started by docker in /home/docker/actions-runner/_work/ci-cd-performance-benchmark/ci-cd-performance-benchmark/java-app)
+2024-08-17T09:24:05.1234472Z 2024-08-17 09:24:05 - Running with Spring Boot v3.3.2, Spring v6.1.11
+2024-08-17T09:24:05.1236475Z 2024-08-17 09:24:05 - No active profile set, falling back to 1 default profile: "default"
+2024-08-17T09:24:08.5910878Z WARNING: A Java agent has been loaded dynamically (/home/docker/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.18/byte-buddy-agent-1.14.18.jar)
+2024-08-17T09:24:08.5915431Z WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+2024-08-17T09:24:08.5918693Z WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+2024-08-17T09:24:08.5921587Z WARNING: Dynamic loading of agents will be disallowed by default in a future release
+2024-08-17T09:24:08.6120198Z Java HotSpot(TM) 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+2024-08-17T09:24:15.3226269Z 2024-08-17 09:24:15 - Initializing Spring TestDispatcherServlet ''
+2024-08-17T09:24:15.3228837Z 2024-08-17 09:24:15 - Initializing Servlet ''
+2024-08-17T09:24:15.4227230Z 2024-08-17 09:24:15 - Completed initialization in 5 ms
+2024-08-17T09:24:15.5230111Z 2024-08-17 09:24:15 - Started PlayerServerTest in 11.782 seconds (process running for 15.585)
+2024-08-17T09:24:16.4969711Z [INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 14.58 s -- in com.ayomided.java_app.controller.PlayerServerTest
+2024-08-17T09:24:16.4987411Z [INFO] Running com.ayomided.java_app.JavaAppApplicationTests
+2024-08-17T09:24:16.4999955Z 2024-08-17 09:24:16 - Could not detect default configuration classes for test class [com.ayomided.java_app.JavaAppApplicationTests]: JavaAppApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-08-17T09:24:16.5009699Z 2024-08-17 09:24:16 - Found @SpringBootConfiguration com.ayomided.java_app.JavaAppApplication for test class com.ayomided.java_app.JavaAppApplicationTests
+2024-08-17T09:24:16.5833522Z 
+2024-08-17T09:24:16.5834428Z   .   ____          _            __ _ _
+2024-08-17T09:24:16.5836051Z  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+2024-08-17T09:24:16.5837286Z ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+2024-08-17T09:24:16.5838430Z  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+2024-08-17T09:24:16.5839967Z   '  |____| .__|_| |_|_| |_\__, | / / / /
+2024-08-17T09:24:16.5841155Z  =========|_|==============|___/=/_/_/_/
+2024-08-17T09:24:16.5841837Z 
+2024-08-17T09:24:16.5842299Z  :: Spring Boot ::                (v3.3.2)
+2024-08-17T09:24:16.5843834Z 
+2024-08-17T09:24:16.5847206Z 2024-08-17 09:24:16 - Starting JavaAppApplicationTests using Java 22.0.2 with PID 25960 (started by docker in /home/docker/actions-runner/_work/ci-cd-performance-benchmark/ci-cd-performance-benchmark/java-app)
+2024-08-17T09:24:16.5852325Z 2024-08-17 09:24:16 - Running with Spring Boot v3.3.2, Spring v6.1.11
+2024-08-17T09:24:16.5854665Z 2024-08-17 09:24:16 - No active profile set, falling back to 1 default profile: "default"
+2024-08-17T09:24:18.3874047Z 2024-08-17 09:24:18 - Started JavaAppApplicationTests in 2.004 seconds (process running for 18.419)
+2024-08-17T09:24:18.4965323Z [INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.125 s -- in com.ayomided.java_app.JavaAppApplicationTests
+2024-08-17T09:24:18.5325358Z [INFO] 
+2024-08-17T09:24:18.5326657Z [INFO] Results:
+2024-08-17T09:24:18.5327405Z [INFO] 
+2024-08-17T09:24:18.5328331Z [INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0
+2024-08-17T09:24:18.5329779Z [INFO] 
+2024-08-17T09:24:18.5803646Z [INFO] ------------------------------------------------------------------------
+2024-08-17T09:24:18.5820323Z [INFO] BUILD SUCCESS
+2024-08-17T09:24:18.5821893Z [INFO] ------------------------------------------------------------------------
+2024-08-17T09:24:18.5822968Z [INFO] Total time:  24.303 s
+2024-08-17T09:24:18.5824394Z [INFO] Finished at: 2024-08-17T09:24:18Z
+2024-08-17T09:24:18.5834010Z [INFO] ------------------------------------------------------------------------
+2024-08-17T09:24:18.6293213Z ##[group]Run actions/upload-artifact@v4
+2024-08-17T09:24:18.6293788Z with:
+2024-08-17T09:24:18.6294131Z   name: Java-results
+2024-08-17T09:24:18.6294651Z   path: java-app/target/surefire-reports
+2024-08-17T09:24:18.6295224Z   if-no-files-found: warn
+2024-08-17T09:24:18.6295969Z   compression-level: 6
+2024-08-17T09:24:18.6296379Z   overwrite: false
+2024-08-17T09:24:18.6296757Z env:
+2024-08-17T09:24:18.6297446Z   JAVA_HOME: /home/docker/actions-runner/_work/_tool/Java_Oracle_jdk/22/x64
+2024-08-17T09:24:18.6298531Z   JAVA_HOME_22_X64: /home/docker/actions-runner/_work/_tool/Java_Oracle_jdk/22/x64
+2024-08-17T09:24:18.6299427Z ##[endgroup]
+2024-08-17T09:24:19.0429587Z With the provided path, there will be 4 files uploaded
+2024-08-17T09:24:19.0440858Z Artifact name is valid!
+2024-08-17T09:24:19.0444715Z Root directory input is valid!
+2024-08-17T09:24:19.3205996Z Beginning upload of artifact content to blob storage
+2024-08-17T09:24:19.5975315Z Uploaded bytes 7278
+2024-08-17T09:24:19.6448521Z Finished uploading artifact content to blob storage!
+2024-08-17T09:24:19.6454011Z SHA256 hash of uploaded artifact zip is 0cd815860c3df275330d505dae578f207f0d5121d7d801348dce8a973f96cf48
+2024-08-17T09:24:19.6457267Z Finalizing artifact upload
+2024-08-17T09:24:19.7476741Z Artifact Java-results.zip successfully finalized. Artifact ID 1822733060
+2024-08-17T09:24:19.7486249Z Artifact Java-results has been successfully uploaded! Final size is 7278 bytes. Artifact ID is 1822733060
+2024-08-17T09:24:19.7489397Z Artifact download URL: https://github.com/Ayomided/ci-cd-performance-benchmark/actions/runs/10431209862/artifacts/1822733060
+2024-08-17T09:24:19.7719279Z Post job cleanup.
+2024-08-17T09:24:20.1111348Z Post job cleanup.
+2024-08-17T09:24:20.3175766Z Cleaning up orphan processes

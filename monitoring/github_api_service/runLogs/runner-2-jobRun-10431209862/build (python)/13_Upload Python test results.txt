@@ -1,0 +1,26 @@
+2024-08-17T09:23:06.4842065Z ##[group]Run actions/upload-artifact@v4
+2024-08-17T09:23:06.4843145Z with:
+2024-08-17T09:23:06.4843721Z   name: Python-results
+2024-08-17T09:23:06.4844611Z   path: python-app/PythonTestResults.xml
+2024-08-17T09:23:06.4845508Z   if-no-files-found: warn
+2024-08-17T09:23:06.4846370Z   compression-level: 6
+2024-08-17T09:23:06.4847079Z   overwrite: false
+2024-08-17T09:23:06.4847621Z env:
+2024-08-17T09:23:06.4848590Z   pythonLocation: /home/docker/actions-runner/_work/_tool/Python/3.12.4/x64
+2024-08-17T09:23:06.4850774Z   PKG_CONFIG_PATH: /home/docker/actions-runner/_work/_tool/Python/3.12.4/x64/lib/pkgconfig
+2024-08-17T09:23:06.4852942Z   Python_ROOT_DIR: /home/docker/actions-runner/_work/_tool/Python/3.12.4/x64
+2024-08-17T09:23:06.4854754Z   Python2_ROOT_DIR: /home/docker/actions-runner/_work/_tool/Python/3.12.4/x64
+2024-08-17T09:23:06.4856737Z   Python3_ROOT_DIR: /home/docker/actions-runner/_work/_tool/Python/3.12.4/x64
+2024-08-17T09:23:06.4858854Z   LD_LIBRARY_PATH: /home/docker/actions-runner/_work/_tool/Python/3.12.4/x64/lib
+2024-08-17T09:23:06.4860247Z ##[endgroup]
+2024-08-17T09:23:07.5008617Z With the provided path, there will be 1 file uploaded
+2024-08-17T09:23:07.5015341Z Artifact name is valid!
+2024-08-17T09:23:07.5022029Z Root directory input is valid!
+2024-08-17T09:23:07.8140864Z Beginning upload of artifact content to blob storage
+2024-08-17T09:23:08.0573879Z Uploaded bytes 392
+2024-08-17T09:23:08.1118672Z Finished uploading artifact content to blob storage!
+2024-08-17T09:23:08.1134584Z SHA256 hash of uploaded artifact zip is f612382476af3d3cc9d289fc2d16559d82d7208b336f55dee741bfa756bdf313
+2024-08-17T09:23:08.1144859Z Finalizing artifact upload
+2024-08-17T09:23:08.2095421Z Artifact Python-results.zip successfully finalized. Artifact ID 1822731960
+2024-08-17T09:23:08.2102885Z Artifact Python-results has been successfully uploaded! Final size is 392 bytes. Artifact ID is 1822731960
+2024-08-17T09:23:08.2114025Z Artifact download URL: https://github.com/Ayomided/ci-cd-performance-benchmark/actions/runs/10431209862/artifacts/1822731960

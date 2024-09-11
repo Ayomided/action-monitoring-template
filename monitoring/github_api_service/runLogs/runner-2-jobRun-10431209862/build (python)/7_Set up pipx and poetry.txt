@@ -1,0 +1,31 @@
+2024-08-17T09:22:48.8014599Z ##[group]Run python -m pip install --user pipx
+2024-08-17T09:22:48.8016464Z [36;1mpython -m pip install --user pipx[0m
+2024-08-17T09:22:48.8019349Z [36;1mexport PATH="$HOME/.local/bin:$PATH"[0m
+2024-08-17T09:22:48.8020646Z [36;1mpipx ensurepath[0m
+2024-08-17T09:22:48.8021596Z [36;1mpipx install poetry[0m
+2024-08-17T09:22:48.8022718Z [36;1mpipx --version[0m
+2024-08-17T09:22:48.8074728Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2024-08-17T09:22:48.8076468Z env:
+2024-08-17T09:22:48.8078636Z   pythonLocation: /home/docker/actions-runner/_work/_tool/Python/3.12.4/x64
+2024-08-17T09:22:48.8081518Z   PKG_CONFIG_PATH: /home/docker/actions-runner/_work/_tool/Python/3.12.4/x64/lib/pkgconfig
+2024-08-17T09:22:48.8086380Z   Python_ROOT_DIR: /home/docker/actions-runner/_work/_tool/Python/3.12.4/x64
+2024-08-17T09:22:48.8088687Z   Python2_ROOT_DIR: /home/docker/actions-runner/_work/_tool/Python/3.12.4/x64
+2024-08-17T09:22:48.8090748Z   Python3_ROOT_DIR: /home/docker/actions-runner/_work/_tool/Python/3.12.4/x64
+2024-08-17T09:22:48.8093328Z   LD_LIBRARY_PATH: /home/docker/actions-runner/_work/_tool/Python/3.12.4/x64/lib
+2024-08-17T09:22:48.8094960Z ##[endgroup]
+2024-08-17T09:22:50.7502724Z Requirement already satisfied: pipx in /home/docker/.local/lib/python3.12/site-packages (1.6.0)
+2024-08-17T09:22:50.7602087Z Requirement already satisfied: argcomplete>=1.9.4 in /home/docker/.local/lib/python3.12/site-packages (from pipx) (3.5.0)
+2024-08-17T09:22:50.7663511Z Requirement already satisfied: packaging>=20 in /home/docker/.local/lib/python3.12/site-packages (from pipx) (24.1)
+2024-08-17T09:22:50.7666929Z Requirement already satisfied: platformdirs>=2.1 in /home/docker/.local/lib/python3.12/site-packages (from pipx) (4.2.2)
+2024-08-17T09:22:50.7670521Z Requirement already satisfied: userpath!=1.9,>=1.6 in /home/docker/.local/lib/python3.12/site-packages (from pipx) (1.9.2)
+2024-08-17T09:22:50.7971002Z Requirement already satisfied: click in /home/docker/.local/lib/python3.12/site-packages (from userpath!=1.9,>=1.6->pipx) (8.1.7)
+2024-08-17T09:22:52.2188334Z /home/docker/.local/bin is already in PATH.
+2024-08-17T09:22:52.2193541Z 
+2024-08-17T09:22:52.2244530Z ⚠️  All pipx binary directories have been added to PATH. If you are sure you
+2024-08-17T09:22:52.2247733Z want to proceed, try again with the '--force' flag.
+2024-08-17T09:22:52.2252783Z 
+2024-08-17T09:22:52.2307748Z Otherwise pipx is ready to go! ✨ 🌟 ✨
+2024-08-17T09:22:53.0539197Z 'poetry' already seems to be installed. Not modifying existing installation in
+2024-08-17T09:22:53.0544257Z '/home/docker/.local/share/pipx/venvs/poetry'. Pass '--force' to force
+2024-08-17T09:22:53.0547000Z installation.
+2024-08-17T09:22:54.0073284Z 1.6.0

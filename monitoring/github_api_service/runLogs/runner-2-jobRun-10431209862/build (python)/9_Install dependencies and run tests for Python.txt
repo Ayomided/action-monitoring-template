@@ -1,0 +1,31 @@
+2024-08-17T09:22:56.2589920Z ##[group]Run mkdir -p /home/docker/actions-runner/_work/tmp  # Ensure temporary directory is available
+2024-08-17T09:22:56.2593011Z [36;1mmkdir -p /home/docker/actions-runner/_work/tmp  # Ensure temporary directory is available[0m
+2024-08-17T09:22:56.2595483Z [36;1mexport TMPDIR=/home/docker/actions-runner/_work/tmp  # Set TMPDIR for Poetry[0m
+2024-08-17T09:22:56.2597445Z [36;1mexport PATH="$HOME/.local/bin:$PATH"[0m
+2024-08-17T09:22:56.2598667Z [36;1mcd python-app[0m
+2024-08-17T09:22:56.2599581Z [36;1mpoetry install[0m
+2024-08-17T09:22:56.2601480Z [36;1mpoetry run pytest --junitxml=PythonTestResults.xml[0m
+2024-08-17T09:22:56.2620131Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2024-08-17T09:22:56.2621756Z env:
+2024-08-17T09:22:56.2622911Z   pythonLocation: /home/docker/actions-runner/_work/_tool/Python/3.12.4/x64
+2024-08-17T09:22:56.2625103Z   PKG_CONFIG_PATH: /home/docker/actions-runner/_work/_tool/Python/3.12.4/x64/lib/pkgconfig
+2024-08-17T09:22:56.2627680Z   Python_ROOT_DIR: /home/docker/actions-runner/_work/_tool/Python/3.12.4/x64
+2024-08-17T09:22:56.2629791Z   Python2_ROOT_DIR: /home/docker/actions-runner/_work/_tool/Python/3.12.4/x64
+2024-08-17T09:22:56.2631850Z   Python3_ROOT_DIR: /home/docker/actions-runner/_work/_tool/Python/3.12.4/x64
+2024-08-17T09:22:56.2634125Z   LD_LIBRARY_PATH: /home/docker/actions-runner/_work/_tool/Python/3.12.4/x64/lib
+2024-08-17T09:22:56.2635673Z ##[endgroup]
+2024-08-17T09:23:01.2287733Z Installing dependencies from lock file
+2024-08-17T09:23:01.6212242Z 
+2024-08-17T09:23:01.6215505Z No dependencies to install or update
+2024-08-17T09:23:01.6285889Z 
+2024-08-17T09:23:01.6288098Z Installing the current project: python-app (0.1.0)
+2024-08-17T09:23:06.1326997Z ============================= test session starts ==============================
+2024-08-17T09:23:06.1348728Z platform linux -- Python 3.12.4, pytest-8.3.2, pluggy-1.5.0
+2024-08-17T09:23:06.1354805Z rootdir: /home/docker/actions-runner/_work/ci-cd-performance-benchmark/ci-cd-performance-benchmark/python-app
+2024-08-17T09:23:06.1357124Z configfile: pyproject.toml
+2024-08-17T09:23:06.1360231Z collected 3 items
+2024-08-17T09:23:06.1360848Z 
+2024-08-17T09:23:06.2434543Z tests/test_server.py ...                                                 [100%]
+2024-08-17T09:23:06.2454859Z 
+2024-08-17T09:23:06.2463708Z - generated xml file: /home/docker/actions-runner/_work/ci-cd-performance-benchmark/ci-cd-performance-benchmark/python-app/PythonTestResults.xml -
+2024-08-17T09:23:06.2469023Z ============================== 3 passed in 0.76s ===============================

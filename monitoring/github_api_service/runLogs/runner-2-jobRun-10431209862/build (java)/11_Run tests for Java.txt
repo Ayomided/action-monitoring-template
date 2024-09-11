@@ -1,0 +1,184 @@
+2024-08-17T09:23:10.6978578Z ##[group]Run cd java-app
+2024-08-17T09:23:10.6980184Z [36;1mcd java-app[0m
+2024-08-17T09:23:10.6981260Z [36;1mmvn install[0m
+2024-08-17T09:23:10.6982022Z [36;1mmvn test[0m
+2024-08-17T09:23:10.7004144Z shell: /usr/bin/bash -e {0}
+2024-08-17T09:23:10.7004918Z env:
+2024-08-17T09:23:10.7005683Z   JAVA_HOME: /home/docker/actions-runner/_work/_tool/Java_Oracle_jdk/22/x64
+2024-08-17T09:23:10.7006931Z   JAVA_HOME_22_X64: /home/docker/actions-runner/_work/_tool/Java_Oracle_jdk/22/x64
+2024-08-17T09:23:10.7007878Z ##[endgroup]
+2024-08-17T09:23:16.3840570Z [INFO] Scanning for projects...
+2024-08-17T09:23:17.8968973Z [INFO] 
+2024-08-17T09:23:17.8981748Z [INFO] -----------------------< com.ayomided:java-app >------------------------
+2024-08-17T09:23:17.9002720Z [INFO] Building java-app 0.0.1-SNAPSHOT
+2024-08-17T09:23:17.9079575Z [INFO]   from pom.xml
+2024-08-17T09:23:17.9092352Z [INFO] --------------------------------[ jar ]---------------------------------
+2024-08-17T09:23:19.8878350Z [INFO] 
+2024-08-17T09:23:19.8881503Z [INFO] --- resources:3.3.1:resources (default-resources) @ java-app ---
+2024-08-17T09:23:20.5803580Z [INFO] Copying 1 resource from src/main/resources to target/classes
+2024-08-17T09:23:20.6229527Z [INFO] Copying 0 resource from src/main/resources to target/classes
+2024-08-17T09:23:20.6250587Z [INFO] 
+2024-08-17T09:23:20.6257391Z [INFO] --- compiler:3.13.0:compile (default-compile) @ java-app ---
+2024-08-17T09:23:21.2881175Z [INFO] Recompiling the module because of changed source code.
+2024-08-17T09:23:21.3129981Z [INFO] Compiling 4 source files with javac [debug parameters release 21] to target/classes
+2024-08-17T09:23:24.0826221Z [INFO] 
+2024-08-17T09:23:24.0845916Z [INFO] --- resources:3.3.1:testResources (default-testResources) @ java-app ---
+2024-08-17T09:23:24.1123202Z [INFO] skip non existing resourceDirectory /home/docker/actions-runner/_work/ci-cd-performance-benchmark/ci-cd-performance-benchmark/java-app/src/test/resources
+2024-08-17T09:23:24.1126947Z [INFO] 
+2024-08-17T09:23:24.1129278Z [INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ java-app ---
+2024-08-17T09:23:24.1381374Z [INFO] Recompiling the module because of changed dependency.
+2024-08-17T09:23:24.1802361Z [INFO] Compiling 2 source files with javac [debug parameters release 21] to target/test-classes
+2024-08-17T09:23:25.6941303Z [INFO] 
+2024-08-17T09:23:25.6962621Z [INFO] --- surefire:3.2.5:test (default-test) @ java-app ---
+2024-08-17T09:23:26.9964543Z [INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+2024-08-17T09:23:27.2228287Z [INFO] 
+2024-08-17T09:23:27.2230650Z [INFO] -------------------------------------------------------
+2024-08-17T09:23:27.2232377Z [INFO]  T E S T S
+2024-08-17T09:23:27.2234138Z [INFO] -------------------------------------------------------
+2024-08-17T09:23:29.3235768Z [INFO] Running com.ayomided.java_app.controller.PlayerServerTest
+2024-08-17T09:23:30.0072578Z 09:23:29.931 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.ayomided.java_app.controller.PlayerServerTest]: PlayerServerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-08-17T09:23:30.5069897Z 09:23:30.445 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.ayomided.java_app.JavaAppApplication for test class com.ayomided.java_app.controller.PlayerServerTest
+2024-08-17T09:23:31.9069757Z 
+2024-08-17T09:23:31.9070896Z   .   ____          _            __ _ _
+2024-08-17T09:23:31.9072573Z  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+2024-08-17T09:23:31.9073801Z ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+2024-08-17T09:23:31.9074914Z  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+2024-08-17T09:23:31.9076063Z   '  |____| .__|_| |_|_| |_\__, | / / / /
+2024-08-17T09:23:31.9077023Z  =========|_|==============|___/=/_/_/_/
+2024-08-17T09:23:31.9077720Z 
+2024-08-17T09:23:32.1068486Z  :: Spring Boot ::                (v3.3.2)
+2024-08-17T09:23:32.1070770Z 
+2024-08-17T09:23:32.3076222Z 2024-08-17 09:23:32 - Starting PlayerServerTest using Java 22.0.2 with PID 25878 (started by docker in /home/docker/actions-runner/_work/ci-cd-performance-benchmark/ci-cd-performance-benchmark/java-app)
+2024-08-17T09:23:32.3081380Z 2024-08-17 09:23:32 - Running with Spring Boot v3.3.2, Spring v6.1.11
+2024-08-17T09:23:32.3083878Z 2024-08-17 09:23:32 - No active profile set, falling back to 1 default profile: "default"
+2024-08-17T09:23:35.8874171Z Java HotSpot(TM) 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+2024-08-17T09:23:35.9255466Z WARNING: A Java agent has been loaded dynamically (/home/docker/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.18/byte-buddy-agent-1.14.18.jar)
+2024-08-17T09:23:35.9260164Z WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+2024-08-17T09:23:35.9264088Z WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+2024-08-17T09:23:35.9267099Z WARNING: Dynamic loading of agents will be disallowed by default in a future release
+2024-08-17T09:23:42.6013029Z 2024-08-17 09:23:42 - Initializing Spring TestDispatcherServlet ''
+2024-08-17T09:23:42.6015625Z 2024-08-17 09:23:42 - Initializing Servlet ''
+2024-08-17T09:23:42.6017619Z 2024-08-17 09:23:42 - Completed initialization in 1 ms
+2024-08-17T09:23:42.6996965Z 2024-08-17 09:23:42 - Started PlayerServerTest in 11.675 seconds (process running for 15.161)
+2024-08-17T09:23:43.7636602Z [INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 14.11 s -- in com.ayomided.java_app.controller.PlayerServerTest
+2024-08-17T09:23:43.7640870Z [INFO] Running com.ayomided.java_app.JavaAppApplicationTests
+2024-08-17T09:23:43.7647140Z 2024-08-17 09:23:43 - Could not detect default configuration classes for test class [com.ayomided.java_app.JavaAppApplicationTests]: JavaAppApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-08-17T09:23:43.7655277Z 2024-08-17 09:23:43 - Found @SpringBootConfiguration com.ayomided.java_app.JavaAppApplication for test class com.ayomided.java_app.JavaAppApplicationTests
+2024-08-17T09:23:43.9200196Z 
+2024-08-17T09:23:43.9201665Z   .   ____          _            __ _ _
+2024-08-17T09:23:43.9203910Z  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+2024-08-17T09:23:43.9205119Z ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+2024-08-17T09:23:43.9207864Z  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+2024-08-17T09:23:43.9209084Z   '  |____| .__|_| |_|_| |_\__, | / / / /
+2024-08-17T09:23:43.9210045Z  =========|_|==============|___/=/_/_/_/
+2024-08-17T09:23:43.9211702Z 
+2024-08-17T09:23:43.9216865Z  :: Spring Boot ::                (v3.3.2)
+2024-08-17T09:23:43.9217683Z 
+2024-08-17T09:23:43.9220889Z 2024-08-17 09:23:43 - Starting JavaAppApplicationTests using Java 22.0.2 with PID 25878 (started by docker in /home/docker/actions-runner/_work/ci-cd-performance-benchmark/ci-cd-performance-benchmark/java-app)
+2024-08-17T09:23:43.9225086Z 2024-08-17 09:23:43 - Running with Spring Boot v3.3.2, Spring v6.1.11
+2024-08-17T09:23:43.9227511Z 2024-08-17 09:23:43 - No active profile set, falling back to 1 default profile: "default"
+2024-08-17T09:23:45.6012453Z 2024-08-17 09:23:45 - Started JavaAppApplicationTests in 1.914 seconds (process running for 18.066)
+2024-08-17T09:23:45.7049604Z [INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.104 s -- in com.ayomided.java_app.JavaAppApplicationTests
+2024-08-17T09:23:45.8221365Z [INFO] 
+2024-08-17T09:23:45.8239382Z [INFO] Results:
+2024-08-17T09:23:45.8240599Z [INFO] 
+2024-08-17T09:23:45.8241615Z [INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0
+2024-08-17T09:23:45.8242794Z [INFO] 
+2024-08-17T09:23:45.8274841Z [INFO] 
+2024-08-17T09:23:45.8276947Z [INFO] --- jar:3.4.2:jar (default-jar) @ java-app ---
+2024-08-17T09:23:47.1342272Z [INFO] Building jar: /home/docker/actions-runner/_work/ci-cd-performance-benchmark/ci-cd-performance-benchmark/java-app/target/java-app-0.0.1-SNAPSHOT.jar
+2024-08-17T09:23:47.4233724Z [INFO] 
+2024-08-17T09:23:47.4245005Z [INFO] --- spring-boot:3.3.2:repackage (repackage) @ java-app ---
+2024-08-17T09:23:49.1071981Z [INFO] Replacing main artifact /home/docker/actions-runner/_work/ci-cd-performance-benchmark/ci-cd-performance-benchmark/java-app/target/java-app-0.0.1-SNAPSHOT.jar with repackaged archive, adding nested dependencies in BOOT-INF/.
+2024-08-17T09:23:49.1090713Z [INFO] The original artifact has been renamed to /home/docker/actions-runner/_work/ci-cd-performance-benchmark/ci-cd-performance-benchmark/java-app/target/java-app-0.0.1-SNAPSHOT.jar.original
+2024-08-17T09:23:49.1105925Z [INFO] 
+2024-08-17T09:23:49.1116410Z [INFO] --- install:3.1.2:install (default-install) @ java-app ---
+2024-08-17T09:23:49.2923607Z [INFO] Installing /home/docker/actions-runner/_work/ci-cd-performance-benchmark/ci-cd-performance-benchmark/java-app/pom.xml to /home/docker/.m2/repository/com/ayomided/java-app/0.0.1-SNAPSHOT/java-app-0.0.1-SNAPSHOT.pom
+2024-08-17T09:23:49.2996138Z [INFO] Installing /home/docker/actions-runner/_work/ci-cd-performance-benchmark/ci-cd-performance-benchmark/java-app/target/java-app-0.0.1-SNAPSHOT.jar to /home/docker/.m2/repository/com/ayomided/java-app/0.0.1-SNAPSHOT/java-app-0.0.1-SNAPSHOT.jar
+2024-08-17T09:23:49.6101638Z [INFO] ------------------------------------------------------------------------
+2024-08-17T09:23:49.6122543Z [INFO] BUILD SUCCESS
+2024-08-17T09:23:49.6128711Z [INFO] ------------------------------------------------------------------------
+2024-08-17T09:23:49.6159218Z [INFO] Total time:  33.406 s
+2024-08-17T09:23:49.6172296Z [INFO] Finished at: 2024-08-17T09:23:49Z
+2024-08-17T09:23:49.6178243Z [INFO] ------------------------------------------------------------------------
+2024-08-17T09:23:54.3949176Z [INFO] Scanning for projects...
+2024-08-17T09:23:55.5948883Z [INFO] 
+2024-08-17T09:23:55.5961712Z [INFO] -----------------------< com.ayomided:java-app >------------------------
+2024-08-17T09:23:55.5965702Z [INFO] Building java-app 0.0.1-SNAPSHOT
+2024-08-17T09:23:55.5977301Z [INFO]   from pom.xml
+2024-08-17T09:23:55.5987971Z [INFO] --------------------------------[ jar ]---------------------------------
+2024-08-17T09:23:56.9928421Z [INFO] 
+2024-08-17T09:23:56.9932722Z [INFO] --- resources:3.3.1:resources (default-resources) @ java-app ---
+2024-08-17T09:23:57.4964933Z [INFO] Copying 1 resource from src/main/resources to target/classes
+2024-08-17T09:23:57.7177394Z [INFO] Copying 0 resource from src/main/resources to target/classes
+2024-08-17T09:23:57.7217498Z [INFO] 
+2024-08-17T09:23:57.7220817Z [INFO] --- compiler:3.13.0:compile (default-compile) @ java-app ---
+2024-08-17T09:23:58.2868173Z [INFO] Nothing to compile - all classes are up to date.
+2024-08-17T09:23:58.2877755Z [INFO] 
+2024-08-17T09:23:58.2885206Z [INFO] --- resources:3.3.1:testResources (default-testResources) @ java-app ---
+2024-08-17T09:23:58.2959171Z [INFO] skip non existing resourceDirectory /home/docker/actions-runner/_work/ci-cd-performance-benchmark/ci-cd-performance-benchmark/java-app/src/test/resources
+2024-08-17T09:23:58.2963008Z [INFO] 
+2024-08-17T09:23:58.2967146Z [INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ java-app ---
+2024-08-17T09:23:58.3232351Z [INFO] Nothing to compile - all classes are up to date.
+2024-08-17T09:23:58.3236105Z [INFO] 
+2024-08-17T09:23:58.3238464Z [INFO] --- surefire:3.2.5:test (default-test) @ java-app ---
+2024-08-17T09:23:59.3832699Z [INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+2024-08-17T09:23:59.5981933Z [INFO] 
+2024-08-17T09:23:59.5983997Z [INFO] -------------------------------------------------------
+2024-08-17T09:23:59.5985641Z [INFO]  T E S T S
+2024-08-17T09:23:59.5987415Z [INFO] -------------------------------------------------------
+2024-08-17T09:24:01.6998861Z [INFO] Running com.ayomided.java_app.controller.PlayerServerTest
+2024-08-17T09:24:02.3926072Z 09:24:02.293 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.ayomided.java_app.controller.PlayerServerTest]: PlayerServerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-08-17T09:24:03.0948116Z 09:24:03.029 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.ayomided.java_app.JavaAppApplication for test class com.ayomided.java_app.controller.PlayerServerTest
+2024-08-17T09:24:04.7174588Z 
+2024-08-17T09:24:04.7176247Z   .   ____          _            __ _ _
+2024-08-17T09:24:04.7178049Z  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+2024-08-17T09:24:04.7179436Z ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+2024-08-17T09:24:04.7180708Z  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+2024-08-17T09:24:04.7305552Z   '  |____| .__|_| |_|_| |_\__, | / / / /
+2024-08-17T09:24:04.7306672Z  =========|_|==============|___/=/_/_/_/
+2024-08-17T09:24:04.7307295Z 
+2024-08-17T09:24:04.9242235Z  :: Spring Boot ::                (v3.3.2)
+2024-08-17T09:24:04.9243785Z 
+2024-08-17T09:24:05.1222583Z 2024-08-17 09:24:05 - Starting PlayerServerTest using Java 22.0.2 with PID 25960 (started by docker in /home/docker/actions-runner/_work/ci-cd-performance-benchmark/ci-cd-performance-benchmark/java-app)
+2024-08-17T09:24:05.1234430Z 2024-08-17 09:24:05 - Running with Spring Boot v3.3.2, Spring v6.1.11
+2024-08-17T09:24:05.1236458Z 2024-08-17 09:24:05 - No active profile set, falling back to 1 default profile: "default"
+2024-08-17T09:24:08.5910815Z WARNING: A Java agent has been loaded dynamically (/home/docker/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.18/byte-buddy-agent-1.14.18.jar)
+2024-08-17T09:24:08.5915412Z WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+2024-08-17T09:24:08.5918651Z WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+2024-08-17T09:24:08.5921567Z WARNING: Dynamic loading of agents will be disallowed by default in a future release
+2024-08-17T09:24:08.6120135Z Java HotSpot(TM) 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+2024-08-17T09:24:15.3226200Z 2024-08-17 09:24:15 - Initializing Spring TestDispatcherServlet ''
+2024-08-17T09:24:15.3228810Z 2024-08-17 09:24:15 - Initializing Servlet ''
+2024-08-17T09:24:15.4227175Z 2024-08-17 09:24:15 - Completed initialization in 5 ms
+2024-08-17T09:24:15.5230050Z 2024-08-17 09:24:15 - Started PlayerServerTest in 11.782 seconds (process running for 15.585)
+2024-08-17T09:24:16.4969643Z [INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 14.58 s -- in com.ayomided.java_app.controller.PlayerServerTest
+2024-08-17T09:24:16.4987335Z [INFO] Running com.ayomided.java_app.JavaAppApplicationTests
+2024-08-17T09:24:16.4999622Z 2024-08-17 09:24:16 - Could not detect default configuration classes for test class [com.ayomided.java_app.JavaAppApplicationTests]: JavaAppApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-08-17T09:24:16.5009661Z 2024-08-17 09:24:16 - Found @SpringBootConfiguration com.ayomided.java_app.JavaAppApplication for test class com.ayomided.java_app.JavaAppApplicationTests
+2024-08-17T09:24:16.5833457Z 
+2024-08-17T09:24:16.5834418Z   .   ____          _            __ _ _
+2024-08-17T09:24:16.5836041Z  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+2024-08-17T09:24:16.5837277Z ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+2024-08-17T09:24:16.5838421Z  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+2024-08-17T09:24:16.5839954Z   '  |____| .__|_| |_|_| |_\__, | / / / /
+2024-08-17T09:24:16.5841142Z  =========|_|==============|___/=/_/_/_/
+2024-08-17T09:24:16.5841828Z 
+2024-08-17T09:24:16.5842290Z  :: Spring Boot ::                (v3.3.2)
+2024-08-17T09:24:16.5843100Z 
+2024-08-17T09:24:16.5847178Z 2024-08-17 09:24:16 - Starting JavaAppApplicationTests using Java 22.0.2 with PID 25960 (started by docker in /home/docker/actions-runner/_work/ci-cd-performance-benchmark/ci-cd-performance-benchmark/java-app)
+2024-08-17T09:24:16.5852281Z 2024-08-17 09:24:16 - Running with Spring Boot v3.3.2, Spring v6.1.11
+2024-08-17T09:24:16.5854648Z 2024-08-17 09:24:16 - No active profile set, falling back to 1 default profile: "default"
+2024-08-17T09:24:18.3873979Z 2024-08-17 09:24:18 - Started JavaAppApplicationTests in 2.004 seconds (process running for 18.419)
+2024-08-17T09:24:18.4965264Z [INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.125 s -- in com.ayomided.java_app.JavaAppApplicationTests
+2024-08-17T09:24:18.5325298Z [INFO] 
+2024-08-17T09:24:18.5326640Z [INFO] Results:
+2024-08-17T09:24:18.5327395Z [INFO] 
+2024-08-17T09:24:18.5328316Z [INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0
+2024-08-17T09:24:18.5329754Z [INFO] 
+2024-08-17T09:24:18.5803545Z [INFO] ------------------------------------------------------------------------
+2024-08-17T09:24:18.5820274Z [INFO] BUILD SUCCESS
+2024-08-17T09:24:18.5821880Z [INFO] ------------------------------------------------------------------------
+2024-08-17T09:24:18.5822957Z [INFO] Total time:  24.303 s
+2024-08-17T09:24:18.5824380Z [INFO] Finished at: 2024-08-17T09:24:18Z
+2024-08-17T09:24:18.5833954Z [INFO] ------------------------------------------------------------------------

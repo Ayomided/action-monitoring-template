@@ -1,0 +1,150 @@
+2024-08-17T09:22:22.2139374Z Requested labels: self-hosted
+2024-08-17T09:22:22.2139661Z Job defined at: Ayomided/ci-cd-performance-benchmark/.github/workflows/build-test-deploy.yml@refs/heads/main
+2024-08-17T09:22:22.2139756Z Waiting for a runner to pick up this job...
+2024-08-17T09:22:23.2718251Z Job is about to start running on the runner: dd975c4b0a26 (repository)
+2024-08-17T09:22:31.4322883Z Current runner version: '2.319.1'
+2024-08-17T09:22:31.4366770Z Runner name: 'dd975c4b0a26'
+2024-08-17T09:22:31.4369120Z Runner group name: 'Default'
+2024-08-17T09:22:31.4371168Z Machine name: 'dd975c4b0a26'
+2024-08-17T09:22:31.4696328Z Testing runner upgrade compatibility
+2024-08-17T09:22:32.9916057Z ##[group]GITHUB_TOKEN Permissions
+2024-08-17T09:22:32.9929112Z Contents: read
+2024-08-17T09:22:32.9930322Z Metadata: read
+2024-08-17T09:22:32.9931076Z Packages: read
+2024-08-17T09:22:32.9931735Z ##[endgroup]
+2024-08-17T09:22:32.9950412Z Secret source: Actions
+2024-08-17T09:22:32.9951829Z Prepare workflow directory
+2024-08-17T09:22:35.2813004Z Prepare all required actions
+2024-08-17T09:22:35.4163638Z Getting action download info
+2024-08-17T09:22:35.9978851Z Download action repository 'actions/checkout@v4' (SHA:692973e3d937129bcbf40652eb9f2f61becf3332)
+2024-08-17T09:22:36.9558128Z Download action repository 'actions/setup-go@v5' (SHA:0a12ed9d6a96ab950c8f026ed9f722fe0da7ef32)
+2024-08-17T09:22:37.6838167Z Download action repository 'actions/setup-python@v4' (SHA:65d7f2d534ac1bc67fcd62888c5f4f3d2cb2b236)
+2024-08-17T09:22:38.2861717Z Download action repository 'actions/setup-java@v4' (SHA:6a0805fcefea3d4657a47ac4c165951e33482018)
+2024-08-17T09:22:39.0397773Z Download action repository 'actions/cache@v3' (SHA:e12d46a63a90f2fae62d114769bbf2a179198b5c)
+2024-08-17T09:22:39.7298001Z Download action repository 'stCarolas/setup-maven@v5' (SHA:d6af6abeda15e98926a57b5aa970a96bb37f97d1)
+2024-08-17T09:22:43.1870586Z Download action repository 'actions/upload-artifact@v4' (SHA:834a144ee995460fba8ed112a2fc961b36a5ec5a)
+2024-08-17T09:22:44.5354198Z Complete job name: build (golang)
+2024-08-17T09:22:44.9083687Z ##[group]Run actions/checkout@v4
+2024-08-17T09:22:44.9084905Z with:
+2024-08-17T09:22:44.9085590Z   repository: Ayomided/ci-cd-performance-benchmark
+2024-08-17T09:22:44.9087108Z   token: ***
+2024-08-17T09:22:44.9087721Z   ssh-strict: true
+2024-08-17T09:22:44.9088433Z   ssh-user: git
+2024-08-17T09:22:44.9089086Z   persist-credentials: true
+2024-08-17T09:22:44.9091140Z   clean: true
+2024-08-17T09:22:44.9091889Z   sparse-checkout-cone-mode: true
+2024-08-17T09:22:44.9092763Z   fetch-depth: 1
+2024-08-17T09:22:44.9093383Z   fetch-tags: false
+2024-08-17T09:22:44.9093959Z   show-progress: true
+2024-08-17T09:22:44.9094583Z   lfs: false
+2024-08-17T09:22:44.9095201Z   submodules: false
+2024-08-17T09:22:44.9095816Z   set-safe-directory: true
+2024-08-17T09:22:44.9096580Z ##[endgroup]
+2024-08-17T09:22:46.8522277Z Syncing repository: Ayomided/ci-cd-performance-benchmark
+2024-08-17T09:22:46.8526417Z ##[group]Getting Git version info
+2024-08-17T09:22:46.8529040Z Working directory is '/home/docker/actions-runner/_work/ci-cd-performance-benchmark/ci-cd-performance-benchmark'
+2024-08-17T09:22:46.8531999Z ##[endgroup]
+2024-08-17T09:22:46.8534452Z Deleting the contents of '/home/docker/actions-runner/_work/ci-cd-performance-benchmark/ci-cd-performance-benchmark'
+2024-08-17T09:22:46.8536927Z The repository will be downloaded using the GitHub REST API
+2024-08-17T09:22:46.8538757Z To create a local Git repository instead, add Git 2.18 or higher to the PATH
+2024-08-17T09:22:46.8540225Z Downloading the archive
+2024-08-17T09:22:47.7154952Z Writing archive to disk
+2024-08-17T09:22:47.7477061Z Extracting the archive
+2024-08-17T09:22:47.7932938Z [command]/usr/bin/tar xz --warning=no-unknown-keyword --overwrite -C /home/docker/actions-runner/_work/ci-cd-performance-benchmark/ci-cd-performance-benchmark/c9302057-a1ad-4243-905f-bc6043fcc481 -f /home/docker/actions-runner/_work/ci-cd-performance-benchmark/ci-cd-performance-benchmark/c9302057-a1ad-4243-905f-bc6043fcc481.tar.gz
+2024-08-17T09:22:48.0035988Z Resolved version Ayomided-ci-cd-performance-benchmark-0aea2f98e01e20d21aaddf3477fda4ec8853f2a7
+2024-08-17T09:22:48.1543496Z ##[group]Run actions/setup-go@v5
+2024-08-17T09:22:48.1544748Z with:
+2024-08-17T09:22:48.1545305Z   go-version: ^1.13.1
+2024-08-17T09:22:48.1545935Z   check-latest: false
+2024-08-17T09:22:48.1547170Z   token: ***
+2024-08-17T09:22:48.1547730Z   cache: true
+2024-08-17T09:22:48.1548918Z ##[endgroup]
+2024-08-17T09:22:48.6482612Z Setup go version spec ^1.13.1
+2024-08-17T09:22:48.6802811Z Found in cache @ /home/docker/actions-runner/_work/_tool/go/1.22.6/x64
+2024-08-17T09:22:48.6818764Z Added go to the path
+2024-08-17T09:22:48.6892429Z Successfully set up Go version ^1.13.1
+2024-08-17T09:22:48.8548230Z [command]/home/docker/actions-runner/_work/_tool/go/1.22.6/x64/bin/go env GOMODCACHE
+2024-08-17T09:22:48.8648883Z [command]/home/docker/actions-runner/_work/_tool/go/1.22.6/x64/bin/go env GOCACHE
+2024-08-17T09:22:48.8784163Z /home/docker/go/pkg/mod
+2024-08-17T09:22:48.8953151Z /home/docker/.cache/go-build
+2024-08-17T09:22:48.9126567Z ##[warning]Restore cache failed: Dependencies file is not found in /home/docker/actions-runner/_work/ci-cd-performance-benchmark/ci-cd-performance-benchmark. Supported file pattern: go.sum
+2024-08-17T09:22:48.9370155Z go version go1.22.6 linux/amd64
+2024-08-17T09:22:48.9370850Z 
+2024-08-17T09:22:48.9371930Z ##[group]go env
+2024-08-17T09:22:49.0162773Z GO111MODULE=''
+2024-08-17T09:22:49.0166528Z GOARCH='amd64'
+2024-08-17T09:22:49.0167259Z GOBIN=''
+2024-08-17T09:22:49.0168024Z GOCACHE='/home/docker/.cache/go-build'
+2024-08-17T09:22:49.0169227Z GOENV='/home/docker/.config/go/env'
+2024-08-17T09:22:49.0170178Z GOEXE=''
+2024-08-17T09:22:49.0170871Z GOEXPERIMENT=''
+2024-08-17T09:22:49.0171590Z GOFLAGS=''
+2024-08-17T09:22:49.0172341Z GOHOSTARCH='amd64'
+2024-08-17T09:22:49.0173181Z GOHOSTOS='linux'
+2024-08-17T09:22:49.0174029Z GOINSECURE=''
+2024-08-17T09:22:49.0174929Z GOMODCACHE='/home/docker/go/pkg/mod'
+2024-08-17T09:22:49.0175873Z GONOPROXY=''
+2024-08-17T09:22:49.0176452Z GONOSUMDB=''
+2024-08-17T09:22:49.0177079Z GOOS='linux'
+2024-08-17T09:22:49.0177807Z GOPATH='/home/docker/go'
+2024-08-17T09:22:49.0178631Z GOPRIVATE=''
+2024-08-17T09:22:49.0179507Z GOPROXY='https://proxy.golang.org,direct'
+2024-08-17T09:22:49.0180944Z GOROOT='/home/docker/actions-runner/_work/_tool/go/1.22.6/x64'
+2024-08-17T09:22:49.0182248Z GOSUMDB='sum.golang.org'
+2024-08-17T09:22:49.0183011Z GOTMPDIR=''
+2024-08-17T09:22:49.0183634Z GOTOOLCHAIN='auto'
+2024-08-17T09:22:49.0185098Z GOTOOLDIR='/home/docker/actions-runner/_work/_tool/go/1.22.6/x64/pkg/tool/linux_amd64'
+2024-08-17T09:22:49.0186673Z GOVCS=''
+2024-08-17T09:22:49.0187385Z GOVERSION='go1.22.6'
+2024-08-17T09:22:49.0188194Z GCCGO='gccgo'
+2024-08-17T09:22:49.0188990Z GOAMD64='v1'
+2024-08-17T09:22:49.0189592Z AR='ar'
+2024-08-17T09:22:49.0190156Z CC='gcc'
+2024-08-17T09:22:49.0190730Z CXX='g++'
+2024-08-17T09:22:49.0191324Z CGO_ENABLED='1'
+2024-08-17T09:22:49.0191991Z GOMOD='/dev/null'
+2024-08-17T09:22:49.0192923Z GOWORK=''
+2024-08-17T09:22:49.0193584Z CGO_CFLAGS='-O2 -g'
+2024-08-17T09:22:49.0194321Z CGO_CPPFLAGS=''
+2024-08-17T09:22:49.0195093Z CGO_CXXFLAGS='-O2 -g'
+2024-08-17T09:22:49.0195906Z CGO_FFLAGS='-O2 -g'
+2024-08-17T09:22:49.0196718Z CGO_LDFLAGS='-O2 -g'
+2024-08-17T09:22:49.0197582Z PKG_CONFIG='pkg-config'
+2024-08-17T09:22:49.0200400Z GOGCCFLAGS='-fPIC -m64 -pthread -Wl,--no-gc-sections -fmessage-length=0 -ffile-prefix-map=/tmp/go-build1307954675=/tmp/go-build -gno-record-gcc-switches'
+2024-08-17T09:22:49.0202538Z 
+2024-08-17T09:22:49.0227433Z ##[endgroup]
+2024-08-17T09:22:49.0690933Z ##[group]Run cd go-app
+2024-08-17T09:22:49.0692138Z [36;1mcd go-app[0m
+2024-08-17T09:22:49.0692788Z [36;1mgo get .[0m
+2024-08-17T09:22:49.0693446Z [36;1mgo build -v ./...[0m
+2024-08-17T09:22:49.0694264Z [36;1mgo test -json > GoTestResults.json[0m
+2024-08-17T09:22:49.0722035Z shell: /usr/bin/bash -e {0}
+2024-08-17T09:22:49.0722895Z ##[endgroup]
+2024-08-17T09:22:56.2676378Z ##[group]Run actions/upload-artifact@v4
+2024-08-17T09:22:56.2677431Z with:
+2024-08-17T09:22:56.2677991Z   name: Go-results
+2024-08-17T09:22:56.2678718Z   path: go-app/GoTestResults.json
+2024-08-17T09:22:56.2679572Z   if-no-files-found: warn
+2024-08-17T09:22:56.2860993Z   compression-level: 6
+2024-08-17T09:22:56.2861718Z   overwrite: false
+2024-08-17T09:22:56.2862284Z ##[endgroup]
+2024-08-17T09:22:57.9424382Z With the provided path, there will be 1 file uploaded
+2024-08-17T09:22:57.9537385Z Artifact name is valid!
+2024-08-17T09:22:57.9585846Z Root directory input is valid!
+2024-08-17T09:22:58.7181924Z Beginning upload of artifact content to blob storage
+2024-08-17T09:22:59.0576873Z Uploaded bytes 890
+2024-08-17T09:22:59.1192093Z Finished uploading artifact content to blob storage!
+2024-08-17T09:22:59.1229340Z SHA256 hash of uploaded artifact zip is fcd976772d3d5a1008d0b097d4ddac03d8a614871dca6f8a7ebcdb7bfb0af5c8
+2024-08-17T09:22:59.1257349Z Finalizing artifact upload
+2024-08-17T09:22:59.2324326Z Artifact Go-results.zip successfully finalized. Artifact ID 1822731827
+2024-08-17T09:22:59.2346473Z Artifact Go-results has been successfully uploaded! Final size is 890 bytes. Artifact ID is 1822731827
+2024-08-17T09:22:59.2368940Z Artifact download URL: https://github.com/Ayomided/ci-cd-performance-benchmark/actions/runs/10431209862/artifacts/1822731827
+2024-08-17T09:22:59.3255039Z Post job cleanup.
+2024-08-17T09:23:00.2302489Z [command]/home/docker/actions-runner/_work/_tool/go/1.22.6/x64/bin/go env GOMODCACHE
+2024-08-17T09:23:00.2740113Z [command]/home/docker/actions-runner/_work/_tool/go/1.22.6/x64/bin/go env GOCACHE
+2024-08-17T09:23:00.3009971Z /home/docker/go/pkg/mod
+2024-08-17T09:23:00.3823851Z /home/docker/.cache/go-build
+2024-08-17T09:23:00.3828377Z [warning]Cache folder path is retrieved but doesn't exist on disk: /home/docker/go/pkg/mod
+2024-08-17T09:23:00.3854942Z Primary key was not generated. Please check the log messages above for more errors or information
+2024-08-17T09:23:00.4274005Z Post job cleanup.
+2024-08-17T09:23:01.0957737Z Cleaning up orphan processes

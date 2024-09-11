@@ -52,8 +52,6 @@ func Collect(RUNNER_PROMETHEUS_URL string) ([]Result, error) {
 
 	request.URL.RawQuery = q.Encode()
 
-	// fmt.Println(request.URL)
-
 	response, err := client.Do(request)
 	if err != nil {
 		return nil, err

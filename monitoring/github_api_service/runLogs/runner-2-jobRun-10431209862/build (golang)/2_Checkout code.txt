@@ -1,0 +1,28 @@
+2024-08-17T09:22:44.9083594Z ##[group]Run actions/checkout@v4
+2024-08-17T09:22:44.9084890Z with:
+2024-08-17T09:22:44.9085577Z   repository: Ayomided/ci-cd-performance-benchmark
+2024-08-17T09:22:44.9087093Z   token: ***
+2024-08-17T09:22:44.9087712Z   ssh-strict: true
+2024-08-17T09:22:44.9088421Z   ssh-user: git
+2024-08-17T09:22:44.9089078Z   persist-credentials: true
+2024-08-17T09:22:44.9091100Z   clean: true
+2024-08-17T09:22:44.9091879Z   sparse-checkout-cone-mode: true
+2024-08-17T09:22:44.9092753Z   fetch-depth: 1
+2024-08-17T09:22:44.9093375Z   fetch-tags: false
+2024-08-17T09:22:44.9093940Z   show-progress: true
+2024-08-17T09:22:44.9094572Z   lfs: false
+2024-08-17T09:22:44.9095188Z   submodules: false
+2024-08-17T09:22:44.9095802Z   set-safe-directory: true
+2024-08-17T09:22:44.9096571Z ##[endgroup]
+2024-08-17T09:22:46.8522168Z Syncing repository: Ayomided/ci-cd-performance-benchmark
+2024-08-17T09:22:46.8526360Z ##[group]Getting Git version info
+2024-08-17T09:22:46.8528873Z Working directory is '/home/docker/actions-runner/_work/ci-cd-performance-benchmark/ci-cd-performance-benchmark'
+2024-08-17T09:22:46.8531980Z ##[endgroup]
+2024-08-17T09:22:46.8534441Z Deleting the contents of '/home/docker/actions-runner/_work/ci-cd-performance-benchmark/ci-cd-performance-benchmark'
+2024-08-17T09:22:46.8536912Z The repository will be downloaded using the GitHub REST API
+2024-08-17T09:22:46.8538746Z To create a local Git repository instead, add Git 2.18 or higher to the PATH
+2024-08-17T09:22:46.8540214Z Downloading the archive
+2024-08-17T09:22:47.7154831Z Writing archive to disk
+2024-08-17T09:22:47.7476971Z Extracting the archive
+2024-08-17T09:22:47.7932805Z [command]/usr/bin/tar xz --warning=no-unknown-keyword --overwrite -C /home/docker/actions-runner/_work/ci-cd-performance-benchmark/ci-cd-performance-benchmark/c9302057-a1ad-4243-905f-bc6043fcc481 -f /home/docker/actions-runner/_work/ci-cd-performance-benchmark/ci-cd-performance-benchmark/c9302057-a1ad-4243-905f-bc6043fcc481.tar.gz
+2024-08-17T09:22:48.0035828Z Resolved version Ayomided-ci-cd-performance-benchmark-0aea2f98e01e20d21aaddf3477fda4ec8853f2a7
