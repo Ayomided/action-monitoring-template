@@ -1,7 +1,0 @@
-2024-08-17T09:23:10.5367384Z ##[group]Run stCarolas/setup-maven@v5
-2024-08-17T09:23:10.5368051Z with:
-2024-08-17T09:23:10.5368681Z   maven-version: 3.9.8
-2024-08-17T09:23:10.5369202Z env:
-2024-08-17T09:23:10.5370026Z   JAVA_HOME: /home/docker/actions-runner/_work/_tool/Java_Oracle_jdk/22/x64
-2024-08-17T09:23:10.5371354Z   JAVA_HOME_22_X64: /home/docker/actions-runner/_work/_tool/Java_Oracle_jdk/22/x64
-2024-08-17T09:23:10.5372311Z ##[endgroup]

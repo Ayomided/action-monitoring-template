@@ -44,8 +44,6 @@ func main() {
 		return
 	}
 
-	// Steps -> StepNumber(Order), JobID/StepID?, Name, Status(Completed || ), Conclusion(Success || Skipped || Failure)
-
 	// Print details of each self-hosted runner
 	// Get Log Files
 	for _, runner := range runners.Runners {
