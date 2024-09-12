@@ -9,11 +9,13 @@ package main
 
 import (
 	"context"
+	"encoding/csv"
 	"fmt"
 	"io"
 	"log"
 	"net/http"
 	"os"
+	"strconv"
 
 	"github.com/google/go-github/v63/github"
 	"github.com/subosito/gotenv"
@@ -37,6 +39,20 @@ func main() {
 
 	// Repository
 	repo := "ci-cd-performance-benchmark"
+
+	csvFile, err := os.Create("all_steps.csv")
+	if err != nil {
+		log.Fatalf("Error creating file %s", err)
+	}
+	defer csvFile.Close()
+
+	csvWriter := csv.NewWriter(csvFile)
+
+	if err := csvWriter.Write([]string{"JobID", "RunID", "Attempt", "Status", "Conclusion", "JobName", "StartedAt", "CompletedAt", "StepName"}); err == nil {
+		log.Print("Successfully written to file")
+	}
+
+	defer csvWriter.Flush()
 
 	runners, _, err := client.Actions.ListRunners(ctx, owner, repo, nil)
 	if err != nil {
@@ -68,7 +84,9 @@ func main() {
 				fmt.Printf("Error listing workflow runs: %v\n", err)
 				continue
 			}
+			// Returns Job and Steps
 			for _, job := range jobs.Jobs {
+				jobName := *job.WorkflowName
 				jobId := *job.ID
 				runId := *run.ID
 				runAttempt := *run.RunAttempt
@@ -77,11 +95,15 @@ func main() {
 				name := *job.Name
 				startAt := *job.StartedAt
 				completedAt := *job.CompletedAt
-				fmt.Printf("%-10s %-10s %-10s %-12s %-12s %-20s %-20s %-20s\n",
-					"JobID", "RunID", "Attempt", "Status", "Conclusion", "JobName", "StartedAt", "CompletedAt")
+				// fmt.Printf("%-10s %-10s %-10s %-12s %-12s %-20s %-20s %-20s %-20s\n",
+				// 	"JobID", "RunID", "Attempt", "Status", "Conclusion", "JobName", "StartedAt", "CompletedAt", "StepName")
 
-				fmt.Printf("%-10d %-10d %-10d %-12s %-12s %-20s %-20v %-20v\n",
-					jobId, runId, runAttempt, status, conclusion, name, startAt, completedAt)
+				row := []string{strconv.Itoa(int(jobId)), strconv.FormatInt(runId, 10), strconv.Itoa(runAttempt), status, conclusion, jobName, startAt.String(), completedAt.String(), name}
+				if err := csvWriter.Write(row); err != nil {
+					log.Fatalf("Error writing metric row %s", err)
+				}
+				// fmt.Printf("%-10d %-10d %-10d %-12s %-12s %-20s %-20v %-20v %-20v\n",
+				// 	jobId, runId, runAttempt, status, conclusion, jobName, startAt, completedAt, name)
 			}
 		}
 	}

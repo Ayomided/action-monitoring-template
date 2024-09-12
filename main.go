@@ -51,7 +51,6 @@ func main() {
 		if err := csvWriter.Write(row); err != nil {
 			log.Fatalf("Error writing metric row %s", err)
 		}
-		// fmt.Printf("Name: %s, Job: %s, JobName: %s, Timestamp: %.0f, Value: %.2f\n", names[i], jobs[i], jobNames[i], timestamps[i], cpuValues[i])
 	}
 
 }

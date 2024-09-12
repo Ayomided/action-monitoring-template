@@ -35,6 +35,8 @@ var start time.Time
 var end time.Time
 
 func Collect(RUNNER_PROMETHEUS_URL string) ([]Result, error) {
+
+	// Add Flag for start end and step
 	client := &http.Client{}
 	request, err := http.NewRequest(http.MethodGet, RUNNER_PROMETHEUS_URL+"/api/v1/query_range", nil)
 	if err != nil {
