@@ -1,0 +1,24 @@
+[project]
+name = "modelling"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "ipykernel>=6.29.5",
+    "jupyter>=1.1.1",
+    "pandas>=2.2.2",
+    "numpy>=1.9.9",
+    "joblib>=1.4.2",
+    "scikit-learn>=1.5.2",
+    "pandas-stubs>=2.2.2.240909",
+    "tensorflow>=2.17.0",
+    "keras>=3.5.0",
+    "prophet>=1.1.5",
+    "matplotlib>=3.9.2",
+    "seaborn",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
