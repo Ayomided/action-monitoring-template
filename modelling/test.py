@@ -1,4 +1,7 @@
-JobID,RunID,Attempt,Status,Conclusion,JobName,StartedAt,CompletedAt,StepName
-,Number,JobID,StepName,Status,Conclusion,StartedAt,CompletedAt
+import pandas as pd
 
-sed -i '1c\Number JobID StepName Status Conclusion StartedAt CompletedAt' all_steps.csv
+df = pd.read_csv('/Users/davidayomide/Downloads/Dev/FINALPROJ/action-monitoring-template/modelling/MINE/all_steps.csv')
+df['StartedAt'] = pd.to_datetime(df['StartedAt'], utc=True)
+df['CompletedAt'] = pd.to_datetime(df['CompletedAt'], utc=True)
+
+print(df.head(5))

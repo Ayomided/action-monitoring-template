@@ -1,0 +1,89 @@
+INFO: 2024-09-14 22:57:40,825: Start training
+INFO: 2024-09-14 23:22:58,420: Start RNN
+INFO: 2024-09-15 07:24:22,418: Start training
+INFO: 2024-09-15 07:48:02,004: Start RNN
+INFO: 2024-09-15 11:42:12,922: Start training
+INFO: 2024-09-15 11:42:12,922: Preprocessing Data
+INFO: 2024-09-15 11:46:27,165: Start training
+INFO: 2024-09-15 11:46:27,166: Preprocessing Data
+INFO: 2024-09-15 11:47:25,763: Start training
+INFO: 2024-09-15 11:47:25,763: Preprocessing Data
+INFO: 2024-09-15 11:48:27,401: Start training
+INFO: 2024-09-15 11:48:27,401: Preprocessing Data
+INFO: 2024-09-15 12:00:25,038: Starting data preprocessing from file: /Users/davidayomide/Downloads/Dev/FINALPROJ/action-monitoring-template/modelling/MINE/all_steps.csv
+INFO: 2024-09-15 12:00:25,038: Loading data with Dask
+INFO: 2024-09-15 12:00:49,676: Loaded 34368863 rows of data
+INFO: 2024-09-15 12:00:49,677: Start training
+INFO: 2024-09-15 12:00:49,677: Converting datetime columns
+INFO: 2024-09-15 12:00:49,711: Calculating execution time
+INFO: 2024-09-15 12:00:49,730: Encoding categorical variables
+INFO: 2024-09-15 12:00:56,352: Unique status values: 0    in_progress
+1         queued
+0      completed
+Name: Status, dtype: object
+INFO: 2024-09-15 12:00:56,375: Encoding Success/Failure
+INFO: 2024-09-15 12:00:56,380: Sorting data by StartedAt
+INFO: 2024-09-15 12:00:56,381: Computing final DataFrame
+INFO: 2024-09-15 12:06:18,666: Preprocessing complete. Final shape: (<dask_expr.expr.Scalar: expr=((SortValues(frame=Assign(frame=Assign(frame=Assign(frame=Assign(frame=Assign(frame=ReadCSV(54b73bd)))))), by=['StartedAt'], options={}))[['StatusEncoded', 'ExecutionTime', 'Conclusion']]).size() // 3, dtype=int64>, 3)
+INFO: 2024-09-15 12:06:18,667: Preprocesing complete
+INFO: 2024-09-15 12:06:18,667: Training Random Forest Model
+INFO: 2024-09-15 12:10:22,700: Starting data preprocessing from file: /Users/davidayomide/Downloads/Dev/FINALPROJ/action-monitoring-template/modelling/MINE/all_steps.csv
+INFO: 2024-09-15 12:10:22,701: Loading data with Dask
+INFO: 2024-09-15 12:10:46,349: Loaded 34368863 rows of data
+INFO: 2024-09-15 12:10:46,350: Start training
+INFO: 2024-09-15 12:10:46,350: Converting datetime columns
+INFO: 2024-09-15 12:10:46,382: Calculating execution time
+INFO: 2024-09-15 12:10:46,401: Encoding categorical variables
+INFO: 2024-09-15 12:10:52,605: Unique status values: 0    in_progress
+1         queued
+0      completed
+Name: Status, dtype: object
+INFO: 2024-09-15 12:10:52,611: Encoding Success/Failure
+INFO: 2024-09-15 12:10:52,613: Sorting data by StartedAt
+INFO: 2024-09-15 12:10:52,613: Computing final DataFrame
+INFO: 2024-09-15 12:15:57,768: Preprocessing complete. Final shape: (<dask_expr.expr.Scalar: expr=((SortValues(frame=Assign(frame=Assign(frame=Assign(frame=Assign(frame=Assign(frame=ReadCSV(54b73bd)))))), by=['StartedAt'], options={}))[['StatusEncoded', 'ExecutionTime', 'Conclusion']]).size() // 3, dtype=int64>, 3)
+INFO: 2024-09-15 12:15:57,769: Preprocesing complete
+INFO: 2024-09-15 12:15:57,769: Start RNN
+INFO: 2024-09-15 12:15:57,770: Preparing sequences with length: 10
+INFO: 2024-09-15 12:24:40,431: Starting data preprocessing from file: /Users/davidayomide/Downloads/Dev/FINALPROJ/action-monitoring-template/modelling/MINE/all_steps.csv
+INFO: 2024-09-15 12:24:40,431: Loading data with Dask
+INFO: 2024-09-15 12:25:05,405: Loaded 34368863 rows of data
+INFO: 2024-09-15 12:25:05,406: Start training
+INFO: 2024-09-15 12:25:05,406: Converting datetime columns
+INFO: 2024-09-15 12:25:05,439: Calculating execution time
+INFO: 2024-09-15 12:25:05,456: Encoding categorical variables
+INFO: 2024-09-15 12:25:12,137: Unique status values: 0    in_progress
+1         queued
+0      completed
+Name: Status, dtype: object
+INFO: 2024-09-15 12:25:12,142: Encoding Success/Failure
+INFO: 2024-09-15 12:25:12,145: Sorting data by StartedAt
+INFO: 2024-09-15 12:25:12,146: Computing final DataFrame
+INFO: 2024-09-15 12:30:12,593: Preprocessing complete. Final shape: (<dask_expr.expr.Scalar: expr=((SortValues(frame=Assign(frame=Assign(frame=Assign(frame=Assign(frame=Assign(frame=ReadCSV(54b73bd)))))), by=['StartedAt'], options={}))[['StatusEncoded', 'ExecutionTime', 'Conclusion']]).size() // 3, dtype=int64>, 3)
+INFO: 2024-09-15 12:30:12,594: Preprocesing complete
+INFO: 2024-09-15 12:30:12,594: Start RNN
+INFO: 2024-09-15 12:30:12,594: Preparing sequences with length: 10
+INFO: 2024-09-15 12:35:35,041: Starting data preprocessing from file: /Users/davidayomide/Downloads/Dev/FINALPROJ/action-monitoring-template/modelling/MINE/all_steps.csv
+INFO: 2024-09-15 12:35:35,041: Loading data with Dask
+INFO: 2024-09-15 12:36:02,355: Loaded 34368863 rows of data
+INFO: 2024-09-15 12:36:02,356: Start training
+INFO: 2024-09-15 12:36:02,356: Converting datetime columns
+INFO: 2024-09-15 12:36:02,392: Calculating execution time
+INFO: 2024-09-15 12:36:02,412: Encoding categorical variables
+INFO: 2024-09-15 12:36:10,646: Unique status values: 0    in_progress
+1         queued
+0      completed
+Name: Status, dtype: object
+INFO: 2024-09-15 12:36:10,673: Encoding Success/Failure
+INFO: 2024-09-15 12:36:10,677: Sorting data by StartedAt
+INFO: 2024-09-15 12:36:10,678: Computing final DataFrame
+INFO: 2024-09-15 12:41:23,478: Columns in computed sequence data: Index(['StatusEncoded', 'ExecutionTime', 'SuccessEncoded'], dtype='object')
+INFO: 2024-09-15 12:41:23,486: Preprocessing complete. Final shape: (<dask_expr.expr.Scalar: expr=((SortValues(frame=Assign(frame=Assign(frame=Assign(frame=Assign(frame=Assign(frame=ReadCSV(54b73bd)))))), by=['StartedAt'], options={}))[['StatusEncoded', 'ExecutionTime', 'SuccessEncoded']]).size() // 3, dtype=int64>, 3)
+INFO: 2024-09-15 12:41:23,486: Preprocesing complete
+INFO: 2024-09-15 12:41:23,486: Start RNN
+INFO: 2024-09-15 12:41:23,486: Preparing sequences with length: 10
+INFO: 2024-09-15 14:03:12,934: Created sequences. X shape: (34368853, 10, 2), y shape: (34368853,)
+INFO: 2024-09-15 14:03:12,950: Normalizing ExecutionTime
+INFO: 2024-09-15 14:03:30,697: Splitting data into train and test sets
+INFO: 2024-09-15 14:40:46,588: Train shapes - X: (27495082, 10, 2), y: (27495082,)
+INFO: 2024-09-15 14:40:46,621: Test shapes - X: (6873771, 10, 2), y: (6873771,)

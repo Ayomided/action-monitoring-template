@@ -17,6 +17,8 @@ dependencies = [
     "prophet>=1.1.5",
     "matplotlib>=3.9.2",
     "seaborn",
+    "dask[complete]>=2024.9.0",
+    "jupytext>=1.16.4",
 ]
 
 [build-system]

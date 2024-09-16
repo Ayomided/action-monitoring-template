@@ -65,8 +65,6 @@ func Collect(RUNNER_PROMETHEUS_URL string) ([]Result, error) {
 		return nil, err
 	}
 
-	// fmt.Println(string(responseBody))
-
 	var runnerDuration MetricData
 	err = json.Unmarshal(responseBody, &runnerDuration)
 	if err != nil {
