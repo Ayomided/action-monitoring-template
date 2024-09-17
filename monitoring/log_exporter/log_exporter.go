@@ -1,3 +1,30 @@
+/*
+This Go program is a Log exporter that monitors GitHub Action runner logs to collect metrics on job execution times.
+It tails the runner log file in real time, extracting the start and end times of jobs, and calculating their durations.
+These metrics are then exposed via an HTTP endpoint for Prometheus scraping.
+
+### Key Features:
+1. **Metrics Exported**:
+  - `runner_job_duration_in_seconds`: Duration of GitHub Action jobs.
+  - `runner_job_start_time`: Start time of a GitHub Action job.
+  - `runner_job_end_time`: End time of a GitHub Action job.
+
+2. **Dynamic Configuration**:
+  - The program supports dynamic configuration via command-line flags or environment variables.
+  - `prom.port`: The port on which to expose Prometheus metrics (default is 9110).
+  - Can be overridden with the environment variable `PROM_PORT`.
+  - `runner.log`: Path to the GitHub Action runner log file (default is `/var/log/github-runner/runner.log`).
+  - Can be overridden with the environment variable `RUNNER_LOG_PATH`.
+
+3. **Real-time Log Monitoring**:
+  - The program uses the `tail` package to continuously follow the runner log file, allowing real-time extraction of job events.
+
+4. **Scalability**:
+  - This tool is designed to be reusable across different GitHub repositories or environments, allowing dynamic adjustment of log paths and ports.
+
+### Usage:
+- You can run the program with the following command-line flags:
+*/
 package main
 
 import (

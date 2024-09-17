@@ -16,13 +16,13 @@ from tensorflow.keras.callbacks import EarlyStopping, ReduceLROnPlateau
 from prophet import Prophet
 from prophet.serialize import model_to_json
 import joblib
-from utils import log
+from utils import log, parse_time
 
 class WorkflowModelTrainer:
     def __init__(self, data_path:str) -> None:
         logger.info(f"Starting data preprocessing from file: {data_path}")
         logger.info("Loading data with Dask")
-        self.data = dd.read_csv(data_path)
+        self.data = pd.read_csv(data_path)
         logger.info(f"Loaded {len(self.data)} rows of data")
         self.X = None
         self.y = None
@@ -30,8 +30,8 @@ class WorkflowModelTrainer:
 
     def prepocess_data(self):
         logger.info("Converting datetime columns")
-        self.data['StartedAt'] = dd.to_datetime(self.data['StartedAt'], utc=True)
-        self.data['CompletedAt'] = dd.to_datetime(self.data['CompletedAt'], utc=True)
+        self.data['StartedAt'] = self.data['StartedAt'].apply(parse_time)
+        self.data['CompletedAt'] = self.data['CompletedAt'].apply(parse_time)
 
         logger.info("Calculating execution time")
         self.data["ExecutionTime"] = (self.data['CompletedAt'] - self.data['StartedAt']).dt.total_seconds()
@@ -40,7 +40,7 @@ class WorkflowModelTrainer:
         self.y_classification = (self.data['Conclusion'] == 'failure').astype(int)
 
         logger.info("Encoding categorical variables")
-        status_values = self.data['Status'].unique().compute()
+        status_values = self.data['Status'].unique()
         logger.info(f"Unique status values: {status_values}")
         status_map = {status: i for i, status in enumerate(status_values)}
         self.data['StatusEncoded'] = self.data['Status'].map(status_map)
@@ -51,15 +51,17 @@ class WorkflowModelTrainer:
         self.X = self.data[['StatusEncoded', 'ExecutionTime']]
         self.y = (self.data['Conclusion'] == 'success').astype(int)
 
+        self.data.to_csv('workflow_data.csv', index=False)
+
         logger.info("Sorting data by StartedAt")
         self.sequence_data = self.data.sort_values('StartedAt')[['StatusEncoded', 'ExecutionTime', 'SuccessEncoded']]
 
         logger.info("Computing final DataFrame")
-        self.sequence_data_pd = self.sequence_data.compute()
+        self.sequence_data_pd = self.sequence_data
         logger.info(f"Columns in computed sequence data: {self.sequence_data_pd.columns}")
 
-        # self.time_series_data = self.data.groupby('StartedAt').size().reset_index()
-        # self.time_series_data.columns = ['ds', 'y']
+        self.time_series_data = self.data.groupby('StartedAt').size().reset_index()
+        self.time_series_data.columns = ['ds', 'y']
         logger.info(f"Preprocessing complete. Final shape: {self.sequence_data.shape}")
         logger.info("Preprocesing complete")
 
@@ -88,43 +90,43 @@ class WorkflowModelTrainer:
 
         return X_train, X_test, y_train, y_test
 
-    # def train_random_forest(self):
-    #     logger.info("Training Random Forest Model")
-    #     X_train, X_test, y_train, y_test = train_test_split(self.X, self.y, test_size=0.2, random_state=42)
-    #     rf_model = RandomForestClassifier(n_estimators=100, random_state=42)
-    #     rf_model.fit(X_train, y_train)
-    #
-    #     y_pred = rf_model.predict(X_test)
-    #     accuracy = accuracy_score(y_test, y_pred)
-    #     # print('Random Forest Model: ')
-    #     # print(f"Accuracy: {accuracy}")
-    #     logger.info(f"Accuracy: {accuracy}")
-    #
-    #     self.models['random_forest'] = rf_model
+    def train_random_forest(self):
+        logger.info("Training Random Forest Model")
+        X_train, X_test, y_train, y_test = train_test_split(self.X, self.y, test_size=0.2, random_state=42)
+        rf_model = RandomForestClassifier(n_estimators=100, random_state=42)
+        rf_model.fit(X_train, y_train)
 
-    # def train_regression_model(self):
-    #     logger.info("Training Regression")
-    #     X_train, X_test, y_train, y_test = train_test_split(self.X, self.y_regression, test_size=0.2, random_state=42)
-    #
-    #     regression_model = RandomForestRegressor(n_estimators=100, random_state=42)
-    #     regression_model.fit(X_train, y_train)
-    #
-    #     # Evaluate model
-    #     y_pred = regression_model.predict(X_test)
-    #     mse = mean_squared_error(y_test, y_pred)
-    #     # print(f"Mean Squared Error: {mse}")
-    #     logger.info("The Mean Squared Error: {}".format(mse))
-    #
-    #     # Cross-validation
-    #     cv_scores = cross_val_score(regression_model, self.X, self.y_regression, cv=5)
-    #     logger.info(f"Cross-validation scores: {cv_scores}")
-    #     logger.info(f"Mean CV score: {np.mean(cv_scores)}")
-    #     logger.info("-------------------------------")
-    #     logger.info("End Regression")
-    #     # print(f"Cross-validation scores: {cv_scores}")
-    #     # print(f"Mean CV score: {np.mean(cv_scores)}")
-    #
-    #     self.models['regression'] = regression_model
+        y_pred = rf_model.predict(X_test)
+        accuracy = accuracy_score(y_test, y_pred)
+        # print('Random Forest Model: ')
+        # print(f"Accuracy: {accuracy}")
+        logger.info(f"Accuracy: {accuracy}")
+
+        self.models['random_forest'] = rf_model
+
+    def train_regression_model(self):
+        logger.info("Training Regression")
+        X_train, X_test, y_train, y_test = train_test_split(self.X, self.y_regression, test_size=0.2, random_state=42)
+
+        regression_model = RandomForestRegressor(n_estimators=100, random_state=42)
+        regression_model.fit(X_train, y_train)
+
+        # Evaluate model
+        y_pred = regression_model.predict(X_test)
+        mse = mean_squared_error(y_test, y_pred)
+        # print(f"Mean Squared Error: {mse}")
+        logger.info("The Mean Squared Error: {}".format(mse))
+
+        # Cross-validation
+        cv_scores = cross_val_score(regression_model, self.X, self.y_regression, cv=5)
+        logger.info(f"Cross-validation scores: {cv_scores}")
+        logger.info(f"Mean CV score: {np.mean(cv_scores)}")
+        logger.info("-------------------------------")
+        logger.info("End Regression")
+        # print(f"Cross-validation scores: {cv_scores}")
+        # print(f"Mean CV score: {np.mean(cv_scores)}")
+
+        self.models['regression'] = regression_model
 
     def train_rnn(self):
         logger.info("Start RNN")
@@ -162,39 +164,39 @@ class WorkflowModelTrainer:
         logger.info("End RNN")
         self.models['rnn'] = model
 
-    # def train_time_series(self):
-    #     logger.info("Start Prophet")
-    #     model = Prophet()
-    #     model.fit(self.time_series_data)
-    #
-    #     future = model.make_future_dataframe(periods=30)
-    #     forecast = model.predict(future)
-    #
-    #     logger.info("Time Series Forecasting Model (Prophet) trained successfully.")
-    #     logger.info("-------------------------------")
-    #     logger.info("End Prophet")
-    #     self.models['prophet'] = model
+    def train_time_series(self):
+        logger.info("Start Prophet")
+        model = Prophet()
+        model.fit(self.time_series_data)
+
+        future = model.make_future_dataframe(periods=30)
+        forecast = model.predict(future)
+
+        logger.info("Time Series Forecasting Model (Prophet) trained successfully.")
+        logger.info("-------------------------------")
+        logger.info("End Prophet")
+        self.models['prophet'] = model
 
     def save_models(self, base_path: str):
         joblib.dump(self.models['random_forest'], f"{base_path}_rf.joblib")
         joblib.dump(self.models['regression'], f"{base_path}_regression.joblib")
         self.models['rnn'].save(f"{base_path}_rnn.keras")
-        # with open(f"{base_path}_prophet.json", "w") as fout:
-        #     fout.write(model_to_json(self.models['prophet']))
+        with open(f"{base_path}_prophet.json", "w") as fout:
+            fout.write(model_to_json(self.models['prophet']))
 
     def train_all_models(self):
         logger.info("Start training")
         self.prepocess_data()
-        # self.train_random_forest()
         self.train_rnn()
-        # self.train_time_series()
-        # self.train_regression_model()
+        self.train_random_forest()
+        self.train_time_series()
+        self.train_regression_model()
         logger.info("-------------------------------")
         logger.info("Models Succesfully Trained")
 
 
 # trainer = WorkflowModelTrainer('all_steps.csv')
 logger = log(path="", file="training.logs")
-trainer = WorkflowModelTrainer('/Users/davidayomide/Downloads/Dev/FINALPROJ/action-monitoring-template/modelling/MINE/all_steps.csv')
+trainer = WorkflowModelTrainer('all_steps.csv')
 trainer.train_all_models()
 trainer.save_models('workflow_models')

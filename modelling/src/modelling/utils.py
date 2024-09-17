@@ -1,8 +1,9 @@
+import dask.dataframe as dd
 import pandas as pd
 import os
 import logging
 
-def parse_time(ts: str) -> pd.Timestamp:
+def parse_time(ts: str):
     return pd.to_datetime(ts.replace(" UTC", ""), format='%Y-%m-%d %H:%M:%S %z').tz_localize(None)
 
 def log(path, file):

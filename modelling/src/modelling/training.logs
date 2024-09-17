@@ -1,0 +1,189 @@
+INFO: 2024-09-16 12:54:58,166: Starting data preprocessing from file: all_steps.csv
+INFO: 2024-09-16 12:54:58,166: Loading data with Dask
+INFO: 2024-09-16 12:54:58,292: Loaded 360 rows of data
+INFO: 2024-09-16 12:54:58,292: Start training
+INFO: 2024-09-16 12:54:58,292: Converting datetime columns
+INFO: 2024-09-16 12:54:58,296: Calculating execution time
+INFO: 2024-09-16 12:54:58,299: Encoding categorical variables
+INFO: 2024-09-16 12:54:58,312: Unique status values: 0    completed
+Name: Status, dtype: object
+INFO: 2024-09-16 12:54:58,313: Encoding Success/Failure
+INFO: 2024-09-16 12:54:58,314: Sorting data by StartedAt
+INFO: 2024-09-16 12:54:58,314: Computing final DataFrame
+INFO: 2024-09-16 12:57:57,149: Starting data preprocessing from file: all_steps.csv
+INFO: 2024-09-16 12:57:57,149: Loading data with Dask
+INFO: 2024-09-16 12:57:57,284: Loaded 360 rows of data
+INFO: 2024-09-16 12:57:57,284: Start training
+INFO: 2024-09-16 12:57:57,284: Converting datetime columns
+INFO: 2024-09-16 12:59:34,681: Starting data preprocessing from file: all_steps.csv
+INFO: 2024-09-16 12:59:34,681: Loading data with Dask
+INFO: 2024-09-16 12:59:34,834: Loaded 360 rows of data
+INFO: 2024-09-16 12:59:34,835: Start training
+INFO: 2024-09-16 12:59:34,835: Converting datetime columns
+INFO: 2024-09-16 13:03:22,052: Starting data preprocessing from file: all_steps.csv
+INFO: 2024-09-16 13:03:22,052: Loading data with Dask
+INFO: 2024-09-16 13:03:22,249: Loaded 360 rows of data
+INFO: 2024-09-16 13:03:22,250: Start training
+INFO: 2024-09-16 13:03:22,250: Converting datetime columns
+INFO: 2024-09-16 13:04:13,558: Starting data preprocessing from file: all_steps.csv
+INFO: 2024-09-16 13:04:13,558: Loading data with Dask
+INFO: 2024-09-16 13:04:13,689: Loaded 360 rows of data
+INFO: 2024-09-16 13:04:13,689: Start training
+INFO: 2024-09-16 13:04:13,689: Converting datetime columns
+INFO: 2024-09-16 13:05:37,579: Starting data preprocessing from file: all_steps.csv
+INFO: 2024-09-16 13:05:37,579: Loading data with Dask
+INFO: 2024-09-16 13:05:37,585: Loaded 360 rows of data
+INFO: 2024-09-16 13:05:37,585: Start training
+INFO: 2024-09-16 13:05:37,585: Converting datetime columns
+INFO: 2024-09-16 13:06:03,535: Starting data preprocessing from file: all_steps.csv
+INFO: 2024-09-16 13:06:03,535: Loading data with Dask
+INFO: 2024-09-16 13:06:03,540: Loaded 360 rows of data
+INFO: 2024-09-16 13:06:03,540: Start training
+INFO: 2024-09-16 13:06:03,540: Converting datetime columns
+INFO: 2024-09-16 13:06:03,678: Calculating execution time
+INFO: 2024-09-16 13:06:03,680: Encoding categorical variables
+INFO: 2024-09-16 13:06:22,817: Starting data preprocessing from file: all_steps.csv
+INFO: 2024-09-16 13:06:22,817: Loading data with Dask
+INFO: 2024-09-16 13:06:22,822: Loaded 360 rows of data
+INFO: 2024-09-16 13:06:22,822: Start training
+INFO: 2024-09-16 13:06:22,822: Converting datetime columns
+INFO: 2024-09-16 13:06:22,954: Calculating execution time
+INFO: 2024-09-16 13:06:22,955: Encoding categorical variables
+INFO: 2024-09-16 13:06:22,956: Unique status values: ['completed']
+INFO: 2024-09-16 13:06:22,957: Encoding Success/Failure
+INFO: 2024-09-16 13:06:22,958: Sorting data by StartedAt
+INFO: 2024-09-16 13:06:22,960: Computing final DataFrame
+INFO: 2024-09-16 13:06:22,960: Columns in computed sequence data: Index(['StatusEncoded', 'ExecutionTime', 'SuccessEncoded'], dtype='object')
+INFO: 2024-09-16 13:06:22,960: Preprocessing complete. Final shape: (360, 3)
+INFO: 2024-09-16 13:06:22,960: Preprocesing complete
+INFO: 2024-09-16 13:06:22,960: Start RNN
+INFO: 2024-09-16 13:06:22,960: Preparing sequences with length: 10
+INFO: 2024-09-16 13:06:23,004: Created sequences. X shape: (350, 10, 2), y shape: (350,)
+INFO: 2024-09-16 13:06:23,004: Normalizing ExecutionTime
+INFO: 2024-09-16 13:06:23,004: Splitting data into train and test sets
+INFO: 2024-09-16 13:06:23,005: Train shapes - X: (280, 10, 2), y: (280,)
+INFO: 2024-09-16 13:06:23,005: Test shapes - X: (70, 10, 2), y: (70,)
+INFO: 2024-09-16 13:06:26,532: Test accuracy: 0.9571 - Test loss: 0.1819
+INFO: 2024-09-16 13:06:26,532: -------------------------------
+INFO: 2024-09-16 13:06:26,532: End RNN
+INFO: 2024-09-16 13:06:26,533: Training Random Forest Model
+INFO: 2024-09-16 13:06:26,584: Accuracy: 0.9583333333333334
+INFO: 2024-09-16 13:06:26,584: Start Prophet
+INFO: 2024-09-16 13:06:41,607: Starting data preprocessing from file: all_steps.csv
+INFO: 2024-09-16 13:06:41,607: Loading data with Dask
+INFO: 2024-09-16 13:06:41,613: Loaded 360 rows of data
+INFO: 2024-09-16 13:06:41,613: Start training
+INFO: 2024-09-16 13:06:41,613: Converting datetime columns
+INFO: 2024-09-16 13:06:41,750: Calculating execution time
+INFO: 2024-09-16 13:06:41,752: Encoding categorical variables
+INFO: 2024-09-16 13:06:41,753: Unique status values: ['completed']
+INFO: 2024-09-16 13:06:41,754: Encoding Success/Failure
+INFO: 2024-09-16 13:06:41,755: Sorting data by StartedAt
+INFO: 2024-09-16 13:06:41,758: Computing final DataFrame
+INFO: 2024-09-16 13:06:41,758: Columns in computed sequence data: Index(['StatusEncoded', 'ExecutionTime', 'SuccessEncoded'], dtype='object')
+INFO: 2024-09-16 13:06:41,759: Preprocessing complete. Final shape: (360, 3)
+INFO: 2024-09-16 13:06:41,759: Preprocesing complete
+INFO: 2024-09-16 13:06:41,759: Start RNN
+INFO: 2024-09-16 13:06:41,759: Preparing sequences with length: 10
+INFO: 2024-09-16 13:06:41,809: Created sequences. X shape: (350, 10, 2), y shape: (350,)
+INFO: 2024-09-16 13:06:41,809: Normalizing ExecutionTime
+INFO: 2024-09-16 13:06:41,809: Splitting data into train and test sets
+INFO: 2024-09-16 13:06:41,813: Train shapes - X: (280, 10, 2), y: (280,)
+INFO: 2024-09-16 13:06:41,813: Test shapes - X: (70, 10, 2), y: (70,)
+INFO: 2024-09-16 13:06:45,235: Test accuracy: 0.9571 - Test loss: 0.2277
+INFO: 2024-09-16 13:06:45,235: -------------------------------
+INFO: 2024-09-16 13:06:45,235: End RNN
+INFO: 2024-09-16 13:06:45,235: Training Random Forest Model
+INFO: 2024-09-16 13:06:45,285: Accuracy: 0.9583333333333334
+INFO: 2024-09-16 13:06:45,285: Start Prophet
+INFO: 2024-09-16 13:07:15,017: Starting data preprocessing from file: all_steps.csv
+INFO: 2024-09-16 13:07:15,018: Loading data with Dask
+INFO: 2024-09-16 13:07:15,023: Loaded 360 rows of data
+INFO: 2024-09-16 13:07:15,023: Start training
+INFO: 2024-09-16 13:07:15,023: Converting datetime columns
+INFO: 2024-09-16 13:07:37,682: Starting data preprocessing from file: all_steps.csv
+INFO: 2024-09-16 13:07:37,682: Loading data with Dask
+INFO: 2024-09-16 13:07:37,687: Loaded 360 rows of data
+INFO: 2024-09-16 13:07:37,687: Start training
+INFO: 2024-09-16 13:07:37,687: Converting datetime columns
+INFO: 2024-09-16 13:07:37,709: Calculating execution time
+INFO: 2024-09-16 13:07:37,710: Encoding categorical variables
+INFO: 2024-09-16 13:07:37,711: Unique status values: ['completed']
+INFO: 2024-09-16 13:07:37,712: Encoding Success/Failure
+INFO: 2024-09-16 13:07:37,713: Sorting data by StartedAt
+INFO: 2024-09-16 13:07:37,714: Computing final DataFrame
+INFO: 2024-09-16 13:07:37,714: Columns in computed sequence data: Index(['StatusEncoded', 'ExecutionTime', 'SuccessEncoded'], dtype='object')
+INFO: 2024-09-16 13:07:37,716: Preprocessing complete. Final shape: (360, 3)
+INFO: 2024-09-16 13:07:37,716: Preprocesing complete
+INFO: 2024-09-16 13:07:37,716: Start RNN
+INFO: 2024-09-16 13:07:37,716: Preparing sequences with length: 10
+INFO: 2024-09-16 13:07:37,761: Created sequences. X shape: (350, 10, 2), y shape: (350,)
+INFO: 2024-09-16 13:07:37,761: Normalizing ExecutionTime
+INFO: 2024-09-16 13:07:37,761: Splitting data into train and test sets
+INFO: 2024-09-16 13:07:37,763: Train shapes - X: (280, 10, 2), y: (280,)
+INFO: 2024-09-16 13:07:37,763: Test shapes - X: (70, 10, 2), y: (70,)
+INFO: 2024-09-16 13:07:40,874: Test accuracy: 0.9571 - Test loss: 0.1920
+INFO: 2024-09-16 13:07:40,874: -------------------------------
+INFO: 2024-09-16 13:07:40,874: End RNN
+INFO: 2024-09-16 13:07:40,874: Training Random Forest Model
+INFO: 2024-09-16 13:07:40,925: Accuracy: 0.9583333333333334
+INFO: 2024-09-16 13:07:40,926: Start Prophet
+INFO: 2024-09-16 13:07:40,952: Disabling yearly seasonality. Run prophet with yearly_seasonality=True to override this.
+INFO: 2024-09-16 13:07:40,952: Disabling weekly seasonality. Run prophet with weekly_seasonality=True to override this.
+INFO: 2024-09-16 13:07:40,952: Disabling daily seasonality. Run prophet with daily_seasonality=True to override this.
+INFO: 2024-09-16 13:07:40,959: Chain [1] start processing
+INFO: 2024-09-16 13:07:41,034: Chain [1] done processing
+INFO: 2024-09-16 13:07:41,059: Time Series Forecasting Model (Prophet) trained successfully.
+INFO: 2024-09-16 13:07:41,060: -------------------------------
+INFO: 2024-09-16 13:07:41,060: End Prophet
+INFO: 2024-09-16 13:07:41,060: Training Regression
+INFO: 2024-09-16 13:07:41,103: The Mean Squared Error: 0.007701388888888617
+INFO: 2024-09-16 13:07:41,321: Cross-validation scores: [0.99999904 0.99999708 0.99999863 0.99999781 0.99999653]
+INFO: 2024-09-16 13:07:41,321: Mean CV score: 0.999997819499766
+INFO: 2024-09-16 13:07:41,321: -------------------------------
+INFO: 2024-09-16 13:07:41,321: End Regression
+INFO: 2024-09-16 13:07:41,321: -------------------------------
+INFO: 2024-09-16 13:07:41,321: Models Succesfully Trained
+INFO: 2024-09-16 13:10:12,560: Starting data preprocessing from file: all_steps.csv
+INFO: 2024-09-16 13:10:12,560: Loading data with Dask
+INFO: 2024-09-16 13:10:12,566: Loaded 360 rows of data
+INFO: 2024-09-16 13:10:12,566: Start training
+INFO: 2024-09-16 13:10:12,566: Converting datetime columns
+INFO: 2024-09-16 13:10:12,587: Calculating execution time
+INFO: 2024-09-16 13:10:12,588: Encoding categorical variables
+INFO: 2024-09-16 13:10:12,589: Unique status values: ['completed']
+INFO: 2024-09-16 13:10:12,590: Encoding Success/Failure
+INFO: 2024-09-16 13:10:12,596: Sorting data by StartedAt
+INFO: 2024-09-16 13:10:12,597: Computing final DataFrame
+INFO: 2024-09-16 13:10:12,597: Columns in computed sequence data: Index(['StatusEncoded', 'ExecutionTime', 'SuccessEncoded'], dtype='object')
+INFO: 2024-09-16 13:10:12,599: Preprocessing complete. Final shape: (360, 3)
+INFO: 2024-09-16 13:10:12,599: Preprocesing complete
+INFO: 2024-09-16 13:10:12,599: Start RNN
+INFO: 2024-09-16 13:10:12,599: Preparing sequences with length: 10
+INFO: 2024-09-16 13:10:12,645: Created sequences. X shape: (350, 10, 2), y shape: (350,)
+INFO: 2024-09-16 13:10:12,645: Normalizing ExecutionTime
+INFO: 2024-09-16 13:10:12,645: Splitting data into train and test sets
+INFO: 2024-09-16 13:10:12,647: Train shapes - X: (280, 10, 2), y: (280,)
+INFO: 2024-09-16 13:10:12,647: Test shapes - X: (70, 10, 2), y: (70,)
+INFO: 2024-09-16 13:10:15,946: Test accuracy: 0.9571 - Test loss: 0.2062
+INFO: 2024-09-16 13:10:15,946: -------------------------------
+INFO: 2024-09-16 13:10:15,946: End RNN
+INFO: 2024-09-16 13:10:15,946: Training Random Forest Model
+INFO: 2024-09-16 13:10:15,997: Accuracy: 0.9583333333333334
+INFO: 2024-09-16 13:10:15,997: Start Prophet
+INFO: 2024-09-16 13:10:16,024: Disabling yearly seasonality. Run prophet with yearly_seasonality=True to override this.
+INFO: 2024-09-16 13:10:16,024: Disabling weekly seasonality. Run prophet with weekly_seasonality=True to override this.
+INFO: 2024-09-16 13:10:16,024: Disabling daily seasonality. Run prophet with daily_seasonality=True to override this.
+INFO: 2024-09-16 13:10:16,031: Chain [1] start processing
+INFO: 2024-09-16 13:10:16,110: Chain [1] done processing
+INFO: 2024-09-16 13:10:16,136: Time Series Forecasting Model (Prophet) trained successfully.
+INFO: 2024-09-16 13:10:16,136: -------------------------------
+INFO: 2024-09-16 13:10:16,136: End Prophet
+INFO: 2024-09-16 13:10:16,136: Training Regression
+INFO: 2024-09-16 13:10:16,180: The Mean Squared Error: 0.007701388888888617
+INFO: 2024-09-16 13:10:16,392: Cross-validation scores: [0.99999904 0.99999708 0.99999863 0.99999781 0.99999653]
+INFO: 2024-09-16 13:10:16,392: Mean CV score: 0.999997819499766
+INFO: 2024-09-16 13:10:16,392: -------------------------------
+INFO: 2024-09-16 13:10:16,392: End Regression
+INFO: 2024-09-16 13:10:16,392: -------------------------------
+INFO: 2024-09-16 13:10:16,392: Models Succesfully Trained
