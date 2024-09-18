@@ -19,6 +19,7 @@ dependencies = [
     "seaborn",
     "dask[complete]>=2024.9.0",
     "jupytext>=1.16.4",
+    "plotly>=5.24.1",
 ]
 
 [build-system]

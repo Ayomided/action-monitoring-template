@@ -359,3 +359,173 @@ JobID,RunID,Attempt,Status,Conclusion,JobName,StartedAt,CompletedAt,StepName
 29400861841,10607810770,1,completed,success,"Build, Test and Deploy",2024-08-29 02:47:10 +0000 UTC,2024-08-29 02:47:45 +0000 UTC,build (golang)
 29400862130,10607810770,1,completed,success,"Build, Test and Deploy",2024-08-29 02:47:10 +0000 UTC,2024-08-29 02:47:51 +0000 UTC,build (python)
 29400862341,10607810770,1,completed,success,"Build, Test and Deploy",2024-08-29 02:47:09 +0000 UTC,2024-08-29 02:49:16 +0000 UTC,build (java)
+29464563620,10628875155,1,completed,failure,"Build, Test and Deploy",2024-08-30 07:46:58 +0000 UTC,2024-08-30 07:47:31 +0000 UTC,build (golang)
+29464563893,10628875155,1,completed,failure,"Build, Test and Deploy",2024-08-30 07:46:59 +0000 UTC,2024-08-30 07:47:18 +0000 UTC,build (python)
+29464564110,10628875155,1,completed,failure,"Build, Test and Deploy",2024-08-30 07:46:58 +0000 UTC,2024-08-30 07:47:36 +0000 UTC,build (java)
+29463682885,10628574886,1,completed,success,"Build, Test and Deploy",2024-08-30 07:22:14 +0000 UTC,2024-08-30 07:22:41 +0000 UTC,build (golang)
+29463683126,10628574886,1,completed,success,"Build, Test and Deploy",2024-08-30 07:22:14 +0000 UTC,2024-08-30 07:22:47 +0000 UTC,build (python)
+29463683368,10628574886,1,completed,success,"Build, Test and Deploy",2024-08-30 07:22:13 +0000 UTC,2024-08-30 07:24:01 +0000 UTC,build (java)
+29462054079,10628002320,1,completed,success,"Build, Test and Deploy",2024-08-30 06:32:49 +0000 UTC,2024-08-30 06:33:26 +0000 UTC,build (golang)
+29462054273,10628002320,1,completed,success,"Build, Test and Deploy",2024-08-30 06:32:49 +0000 UTC,2024-08-30 06:33:34 +0000 UTC,build (python)
+29462054454,10628002320,1,completed,success,"Build, Test and Deploy",2024-08-30 06:32:49 +0000 UTC,2024-08-30 06:34:45 +0000 UTC,build (java)
+29460339223,10627355233,1,completed,success,"Build, Test and Deploy",2024-08-30 05:27:31 +0000 UTC,2024-08-30 05:28:05 +0000 UTC,build (golang)
+29460339341,10627355233,1,completed,success,"Build, Test and Deploy",2024-08-30 05:27:31 +0000 UTC,2024-08-30 05:28:12 +0000 UTC,build (python)
+29460339472,10627355233,1,completed,success,"Build, Test and Deploy",2024-08-30 05:27:31 +0000 UTC,2024-08-30 05:29:26 +0000 UTC,build (java)
+29458986579,10626831431,1,completed,success,"Build, Test and Deploy",2024-08-30 04:28:57 +0000 UTC,2024-08-30 04:29:33 +0000 UTC,build (golang)
+29458986739,10626831431,1,completed,success,"Build, Test and Deploy",2024-08-30 04:28:57 +0000 UTC,2024-08-30 04:29:39 +0000 UTC,build (python)
+29458986901,10626831431,1,completed,success,"Build, Test and Deploy",2024-08-30 04:28:57 +0000 UTC,2024-08-30 04:30:51 +0000 UTC,build (java)
+29457633925,10626307629,1,completed,failure,"Build, Test and Deploy",2024-08-30 03:30:23 +0000 UTC,2024-08-30 03:30:56 +0000 UTC,build (golang)
+29457634085,10626307629,1,completed,failure,"Build, Test and Deploy",2024-08-30 03:30:23 +0000 UTC,2024-08-30 03:30:42 +0000 UTC,build (python)
+29457634246,10626307629,1,completed,failure,"Build, Test and Deploy",2024-08-30 03:30:23 +0000 UTC,2024-08-30 03:31:01 +0000 UTC,build (java)
+29456281271,10625783827,1,completed,success,"Build, Test and Deploy",2024-08-30 02:31:49 +0000 UTC,2024-08-30 02:32:25 +0000 UTC,build (golang)
+29456281431,10625783827,1,completed,success,"Build, Test and Deploy",2024-08-30 02:31:49 +0000 UTC,2024-08-30 02:32:31 +0000 UTC,build (python)
+29456281592,10625783827,1,completed,success,"Build, Test and Deploy",2024-08-30 02:31:49 +0000 UTC,2024-08-30 02:33:43 +0000 UTC,build (java)
+29454928617,10625260025,1,completed,success,"Build, Test and Deploy",2024-08-30 01:33:15 +0000 UTC,2024-08-30 01:33:51 +0000 UTC,build (golang)
+29454928777,10625260025,1,completed,success,"Build, Test and Deploy",2024-08-30 01:33:15 +0000 UTC,2024-08-30 01:33:57 +0000 UTC,build (python)
+29454928938,10625260025,1,completed,success,"Build, Test and Deploy",2024-08-30 01:33:15 +0000 UTC,2024-08-30 01:35:09 +0000 UTC,build (java)
+29453575963,10624736223,1,completed,success,"Build, Test and Deploy",2024-08-30 00:34:41 +0000 UTC,2024-08-30 00:35:17 +0000 UTC,build (golang)
+29453576123,10624736223,1,completed,success,"Build, Test and Deploy",2024-08-30 00:34:41 +0000 UTC,2024-08-30 00:35:23 +0000 UTC,build (python)
+29453576284,10624736223,1,completed,success,"Build, Test and Deploy",2024-08-30 00:34:41 +0000 UTC,2024-08-30 00:36:35 +0000 UTC,build (java)
+29452223309,10624212421,1,completed,failure,"Build, Test and Deploy",2024-08-29 23:36:07 +0000 UTC,2024-08-29 23:36:40 +0000 UTC,build (golang)
+29452223469,10624212421,1,completed,failure,"Build, Test and Deploy",2024-08-29 23:36:07 +0000 UTC,2024-08-29 23:36:26 +0000 UTC,build (python)
+29452223630,10624212421,1,completed,failure,"Build, Test and Deploy",2024-08-29 23:36:07 +0000 UTC,2024-08-29 23:36:45 +0000 UTC,build (java)
+29450870655,10623688619,1,completed,success,"Build, Test and Deploy",2024-08-29 22:37:33 +0000 UTC,2024-08-29 22:38:09 +0000 UTC,build (golang)
+29450870815,10623688619,1,completed,success,"Build, Test and Deploy",2024-08-29 22:37:33 +0000 UTC,2024-08-29 22:38:15 +0000 UTC,build (python)
+29450870976,10623688619,1,completed,success,"Build, Test and Deploy",2024-08-29 22:37:33 +0000 UTC,2024-08-29 22:39:27 +0000 UTC,build (java)
+29449518001,10623164817,1,completed,success,"Build, Test and Deploy",2024-08-29 21:38:59 +0000 UTC,2024-08-29 21:39:35 +0000 UTC,build (golang)
+29449518161,10623164817,1,completed,success,"Build, Test and Deploy",2024-08-29 21:38:59 +0000 UTC,2024-08-29 21:39:41 +0000 UTC,build (python)
+29449518322,10623164817,1,completed,success,"Build, Test and Deploy",2024-08-29 21:38:59 +0000 UTC,2024-08-29 21:40:53 +0000 UTC,build (java)
+29448165347,10622641015,1,completed,success,"Build, Test and Deploy",2024-08-29 20:40:25 +0000 UTC,2024-08-29 20:41:01 +0000 UTC,build (golang)
+29448165507,10622641015,1,completed,success,"Build, Test and Deploy",2024-08-29 20:40:25 +0000 UTC,2024-08-29 20:41:07 +0000 UTC,build (python)
+29448165668,10622641015,1,completed,success,"Build, Test and Deploy",2024-08-29 20:40:25 +0000 UTC,2024-08-29 20:42:19 +0000 UTC,build (java)
+29446812693,10622117213,1,completed,failure,"Build, Test and Deploy",2024-08-29 19:41:51 +0000 UTC,2024-08-29 19:42:24 +0000 UTC,build (golang)
+29446812853,10622117213,1,completed,failure,"Build, Test and Deploy",2024-08-29 19:41:51 +0000 UTC,2024-08-29 19:42:10 +0000 UTC,build (python)
+29446813014,10622117213,1,completed,failure,"Build, Test and Deploy",2024-08-29 19:41:51 +0000 UTC,2024-08-29 19:42:29 +0000 UTC,build (java)
+29445460039,10621593411,1,completed,success,"Build, Test and Deploy",2024-08-29 18:43:17 +0000 UTC,2024-08-29 18:43:53 +0000 UTC,build (golang)
+29445460199,10621593411,1,completed,success,"Build, Test and Deploy",2024-08-29 18:43:17 +0000 UTC,2024-08-29 18:43:59 +0000 UTC,build (python)
+29445460360,10621593411,1,completed,success,"Build, Test and Deploy",2024-08-29 18:43:17 +0000 UTC,2024-08-29 18:45:11 +0000 UTC,build (java)
+29444107385,10621069609,1,completed,success,"Build, Test and Deploy",2024-08-29 17:44:43 +0000 UTC,2024-08-29 17:45:19 +0000 UTC,build (golang)
+29444107545,10621069609,1,completed,success,"Build, Test and Deploy",2024-08-29 17:44:43 +0000 UTC,2024-08-29 17:45:25 +0000 UTC,build (python)
+29444107706,10621069609,1,completed,success,"Build, Test and Deploy",2024-08-29 17:44:43 +0000 UTC,2024-08-29 17:46:37 +0000 UTC,build (java)
+29442754731,10620545807,1,completed,success,"Build, Test and Deploy",2024-08-29 16:46:09 +0000 UTC,2024-08-29 16:46:45 +0000 UTC,build (golang)
+29442754891,10620545807,1,completed,success,"Build, Test and Deploy",2024-08-29 16:46:09 +0000 UTC,2024-08-29 16:46:51 +0000 UTC,build (python)
+29442755052,10620545807,1,completed,success,"Build, Test and Deploy",2024-08-29 16:46:09 +0000 UTC,2024-08-29 16:48:03 +0000 UTC,build (java)
+29441402077,10620022005,1,completed,failure,"Build, Test and Deploy",2024-08-29 15:47:35 +0000 UTC,2024-08-29 15:48:08 +0000 UTC,build (golang)
+29441402237,10620022005,1,completed,failure,"Build, Test and Deploy",2024-08-29 15:47:35 +0000 UTC,2024-08-29 15:47:54 +0000 UTC,build (python)
+29441402398,10620022005,1,completed,failure,"Build, Test and Deploy",2024-08-29 15:47:35 +0000 UTC,2024-08-29 15:48:13 +0000 UTC,build (java)
+29440049423,10619498203,1,completed,success,"Build, Test and Deploy",2024-08-29 14:49:01 +0000 UTC,2024-08-29 14:49:37 +0000 UTC,build (golang)
+29440049583,10619498203,1,completed,success,"Build, Test and Deploy",2024-08-29 14:49:01 +0000 UTC,2024-08-29 14:49:43 +0000 UTC,build (python)
+29440049744,10619498203,1,completed,success,"Build, Test and Deploy",2024-08-29 14:49:01 +0000 UTC,2024-08-29 14:50:55 +0000 UTC,build (java)
+29438696769,10618974401,1,completed,success,"Build, Test and Deploy",2024-08-29 13:50:27 +0000 UTC,2024-08-29 13:51:03 +0000 UTC,build (golang)
+29438696929,10618974401,1,completed,success,"Build, Test and Deploy",2024-08-29 13:50:27 +0000 UTC,2024-08-29 13:51:09 +0000 UTC,build (python)
+29438697090,10618974401,1,completed,success,"Build, Test and Deploy",2024-08-29 13:50:27 +0000 UTC,2024-08-29 13:52:21 +0000 UTC,build (java)
+29437344115,10618450599,1,completed,success,"Build, Test and Deploy",2024-08-29 12:51:53 +0000 UTC,2024-08-29 12:52:29 +0000 UTC,build (golang)
+29437344275,10618450599,1,completed,success,"Build, Test and Deploy",2024-08-29 12:51:53 +0000 UTC,2024-08-29 12:52:35 +0000 UTC,build (python)
+29437344436,10618450599,1,completed,success,"Build, Test and Deploy",2024-08-29 12:51:53 +0000 UTC,2024-08-29 12:53:47 +0000 UTC,build (java)
+29435991461,10617926797,1,completed,failure,"Build, Test and Deploy",2024-08-29 11:53:19 +0000 UTC,2024-08-29 11:53:52 +0000 UTC,build (golang)
+29435991621,10617926797,1,completed,failure,"Build, Test and Deploy",2024-08-29 11:53:19 +0000 UTC,2024-08-29 11:53:38 +0000 UTC,build (python)
+29435991782,10617926797,1,completed,failure,"Build, Test and Deploy",2024-08-29 11:53:19 +0000 UTC,2024-08-29 11:53:57 +0000 UTC,build (java)
+29434638807,10617402995,1,completed,success,"Build, Test and Deploy",2024-08-29 10:54:45 +0000 UTC,2024-08-29 10:55:21 +0000 UTC,build (golang)
+29434638967,10617402995,1,completed,success,"Build, Test and Deploy",2024-08-29 10:54:45 +0000 UTC,2024-08-29 10:55:27 +0000 UTC,build (python)
+29434639128,10617402995,1,completed,success,"Build, Test and Deploy",2024-08-29 10:54:45 +0000 UTC,2024-08-29 10:56:39 +0000 UTC,build (java)
+29433286153,10616879193,1,completed,success,"Build, Test and Deploy",2024-08-29 09:56:11 +0000 UTC,2024-08-29 09:56:47 +0000 UTC,build (golang)
+29433286313,10616879193,1,completed,success,"Build, Test and Deploy",2024-08-29 09:56:11 +0000 UTC,2024-08-29 09:56:53 +0000 UTC,build (python)
+29433286474,10616879193,1,completed,success,"Build, Test and Deploy",2024-08-29 09:56:11 +0000 UTC,2024-08-29 09:58:05 +0000 UTC,build (java)
+29431933499,10616355391,1,completed,success,"Build, Test and Deploy",2024-08-29 08:57:37 +0000 UTC,2024-08-29 08:58:13 +0000 UTC,build (golang)
+29431933659,10616355391,1,completed,success,"Build, Test and Deploy",2024-08-29 08:57:37 +0000 UTC,2024-08-29 08:58:19 +0000 UTC,build (python)
+29431933820,10616355391,1,completed,success,"Build, Test and Deploy",2024-08-29 08:57:37 +0000 UTC,2024-08-29 08:59:31 +0000 UTC,build (java)
+29430580845,10615831589,1,completed,failure,"Build, Test and Deploy",2024-08-29 07:59:03 +0000 UTC,2024-08-29 07:59:36 +0000 UTC,build (golang)
+29430581005,10615831589,1,completed,failure,"Build, Test and Deploy",2024-08-29 07:59:03 +0000 UTC,2024-08-29 07:59:22 +0000 UTC,build (python)
+29430581166,10615831589,1,completed,failure,"Build, Test and Deploy",2024-08-29 07:59:03 +0000 UTC,2024-08-29 07:59:41 +0000 UTC,build (java)
+29429228191,10615307787,1,completed,success,"Build, Test and Deploy",2024-08-29 07:00:29 +0000 UTC,2024-08-29 07:01:05 +0000 UTC,build (golang)
+29429228351,10615307787,1,completed,success,"Build, Test and Deploy",2024-08-29 07:00:29 +0000 UTC,2024-08-29 07:01:11 +0000 UTC,build (python)
+29429228512,10615307787,1,completed,success,"Build, Test and Deploy",2024-08-29 07:00:29 +0000 UTC,2024-08-29 07:02:23 +0000 UTC,build (java)
+29427875537,10614783985,1,completed,success,"Data Processing and Analysis",2024-08-29 06:01:55 +0000 UTC,2024-08-29 06:03:25 +0000 UTC,data preparation
+29427875697,10614783985,1,completed,success,"Data Processing and Analysis",2024-08-29 06:03:26 +0000 UTC,2024-08-29 06:05:56 +0000 UTC,data analysis
+29427875858,10614783985,1,completed,success,"Data Processing and Analysis",2024-08-29 06:05:57 +0000 UTC,2024-08-29 06:07:27 +0000 UTC,generate report
+29426522883,10614260183,1,completed,success,"Data Processing and Analysis",2024-08-29 05:03:21 +0000 UTC,2024-08-29 05:04:51 +0000 UTC,data preparation
+29426523043,10614260183,1,completed,success,"Data Processing and Analysis",2024-08-29 05:04:52 +0000 UTC,2024-08-29 05:07:22 +0000 UTC,data analysis
+29426523204,10614260183,1,completed,success,"Data Processing and Analysis",2024-08-29 05:07:23 +0000 UTC,2024-08-29 05:08:53 +0000 UTC,generate report
+29425170229,10613736381,1,completed,failure,"Data Processing and Analysis",2024-08-29 04:04:47 +0000 UTC,2024-08-29 04:06:17 +0000 UTC,data preparation
+29425170389,10613736381,1,completed,failure,"Data Processing and Analysis",2024-08-29 04:06:18 +0000 UTC,2024-08-29 04:07:48 +0000 UTC,data analysis
+29423817575,10613212579,1,completed,success,"Data Processing and Analysis",2024-08-29 03:06:13 +0000 UTC,2024-08-29 03:07:43 +0000 UTC,data preparation
+29423817735,10613212579,1,completed,success,"Data Processing and Analysis",2024-08-29 03:07:44 +0000 UTC,2024-08-29 03:10:14 +0000 UTC,data analysis
+29423817896,10613212579,1,completed,success,"Data Processing and Analysis",2024-08-29 03:10:15 +0000 UTC,2024-08-29 03:11:45 +0000 UTC,generate report
+29422464921,10612688777,1,completed,success,"Data Processing and Analysis",2024-08-29 02:07:39 +0000 UTC,2024-08-29 02:09:09 +0000 UTC,data preparation
+29422465081,10612688777,1,completed,success,"Data Processing and Analysis",2024-08-29 02:09:10 +0000 UTC,2024-08-29 02:11:40 +0000 UTC,data analysis
+29422465242,10612688777,1,completed,success,"Data Processing and Analysis",2024-08-29 02:11:41 +0000 UTC,2024-08-29 02:13:11 +0000 UTC,generate report
+29421112267,10612164975,1,completed,failure,"Data Processing and Analysis",2024-08-29 01:09:05 +0000 UTC,2024-08-29 01:10:35 +0000 UTC,data preparation
+29421112427,10612164975,1,completed,failure,"Data Processing and Analysis",2024-08-29 01:10:36 +0000 UTC,2024-08-29 01:12:06 +0000 UTC,data analysis
+29421112588,10612164975,1,cancelled,failure,"Data Processing and Analysis",2024-08-29 01:12:07 +0000 UTC,2024-08-29 01:12:37 +0000 UTC,generate report
+29419759613,10611641173,1,completed,success,"Data Processing and Analysis",2024-08-29 00:10:31 +0000 UTC,2024-08-29 00:12:01 +0000 UTC,data preparation
+29419759773,10611641173,1,completed,success,"Data Processing and Analysis",2024-08-29 00:12:02 +0000 UTC,2024-08-29 00:14:32 +0000 UTC,data analysis
+29419759934,10611641173,1,completed,success,"Data Processing and Analysis",2024-08-29 00:14:33 +0000 UTC,2024-08-29 00:16:03 +0000 UTC,generate report
+29418406959,10611117371,1,completed,success,"Data Processing and Analysis",2024-08-28 23:11:57 +0000 UTC,2024-08-28 23:13:27 +0000 UTC,data preparation
+29418407119,10611117371,1,completed,success,"Data Processing and Analysis",2024-08-28 23:13:28 +0000 UTC,2024-08-28 23:15:58 +0000 UTC,data analysis
+29418407280,10611117371,1,completed,success,"Data Processing and Analysis",2024-08-28 23:15:59 +0000 UTC,2024-08-28 23:17:29 +0000 UTC,generate report
+29417054305,10610593569,1,completed,success,"Data Processing and Analysis",2024-08-28 22:13:23 +0000 UTC,2024-08-28 22:14:53 +0000 UTC,data preparation
+29417054465,10610593569,1,completed,success,"Data Processing and Analysis",2024-08-28 22:14:54 +0000 UTC,2024-08-28 22:17:24 +0000 UTC,data analysis
+29417054626,10610593569,1,completed,success,"Data Processing and Analysis",2024-08-28 22:17:25 +0000 UTC,2024-08-28 22:18:55 +0000 UTC,generate report
+29415701651,10610069767,1,completed,failure,"Data Processing and Analysis",2024-08-28 21:14:49 +0000 UTC,2024-08-28 21:16:19 +0000 UTC,data preparation
+29415701811,10610069767,1,completed,failure,"Data Processing and Analysis",2024-08-28 21:16:20 +0000 UTC,2024-08-28 21:17:50 +0000 UTC,data analysis
+29415701972,10610069767,1,skipped,failure,"Data Processing and Analysis",2024-08-28 21:17:51 +0000 UTC,2024-08-28 21:17:51 +0000 UTC,generate report
+29414348997,10609545965,1,completed,success,"Data Processing and Analysis",2024-08-28 20:16:15 +0000 UTC,2024-08-28 20:17:45 +0000 UTC,data preparation
+29414349157,10609545965,1,completed,success,"Data Processing and Analysis",2024-08-28 20:17:46 +0000 UTC,2024-08-28 20:20:16 +0000 UTC,data analysis
+29414349318,10609545965,1,completed,success,"Data Processing and Analysis",2024-08-28 20:20:17 +0000 UTC,2024-08-28 20:21:47 +0000 UTC,generate report
+29412996343,10609022163,1,completed,success,"Data Processing and Analysis",2024-08-28 19:17:41 +0000 UTC,2024-08-28 19:19:11 +0000 UTC,data preparation
+29412996503,10609022163,1,completed,success,"Data Processing and Analysis",2024-08-28 19:19:12 +0000 UTC,2024-08-28 19:21:42 +0000 UTC,data analysis
+29412996664,10609022163,1,completed,success,"Data Processing and Analysis",2024-08-28 19:21:43 +0000 UTC,2024-08-28 19:23:13 +0000 UTC,generate report
+29411643689,10608498361,1,completed,failure,"Data Processing and Analysis",2024-08-28 18:19:07 +0000 UTC,2024-08-28 18:20:37 +0000 UTC,data preparation
+29411643849,10608498361,1,completed,failure,"Data Processing and Analysis",2024-08-28 18:20:38 +0000 UTC,2024-08-28 18:22:08 +0000 UTC,data analysis
+29411644010,10608498361,1,cancelled,failure,"Data Processing and Analysis",2024-08-28 18:22:09 +0000 UTC,2024-08-28 18:22:39 +0000 UTC,generate report
+29411643689,10608498361,1,completed,failure,"Data Processing and Analysis",2024-08-28 18:19:07 +0000 UTC,2024-08-28 18:20:37 +0000 UTC,data preparation
+29411643849,10608498361,1,completed,failure,"Data Processing and Analysis",2024-08-28 18:20:38 +0000 UTC,2024-08-28 18:22:08 +0000 UTC,data analysis
+29411644010,10608498361,1,cancelled,failure,"Data Processing and Analysis",2024-08-28 18:22:09 +0000 UTC,2024-08-28 18:22:39 +0000 UTC,generate report
+29410291035,10607974559,1,completed,success,"CodeQL",2024-08-28 17:20:33 +0000 UTC,2024-08-28 17:21:03 +0000 UTC,initialize CodeQL
+29410291195,10607974559,1,completed,success,"CodeQL",2024-08-28 17:21:04 +0000 UTC,2024-08-28 17:26:04 +0000 UTC,perform CodeQL analysis
+29410291356,10607974559,1,completed,success,"CodeQL",2024-08-28 17:26:05 +0000 UTC,2024-08-28 17:26:35 +0000 UTC,upload SARIF results
+29408938381,10607450757,1,completed,success,"Linting",2024-08-28 16:21:59 +0000 UTC,2024-08-28 16:22:29 +0000 UTC,install dependencies
+29408938541,10607450757,1,completed,success,"Linting",2024-08-28 16:22:30 +0000 UTC,2024-08-28 16:23:30 +0000 UTC,run ESLint
+29408938702,10607450757,1,completed,success,"Linting",2024-08-28 16:23:31 +0000 UTC,2024-08-28 16:24:31 +0000 UTC,run Prettier
+29407585727,10606926955,1,completed,failure,"CodeQL",2024-08-28 15:23:25 +0000 UTC,2024-08-28 15:23:55 +0000 UTC,initialize CodeQL
+29407585887,10606926955,1,completed,failure,"CodeQL",2024-08-28 15:23:56 +0000 UTC,2024-08-28 15:28:56 +0000 UTC,perform CodeQL analysis
+29407586048,10606926955,1,skipped,failure,"CodeQL",2024-08-28 15:28:57 +0000 UTC,2024-08-28 15:28:57 +0000 UTC,upload SARIF results
+29406233073,10606403153,1,completed,success,"Linting",2024-08-28 14:24:51 +0000 UTC,2024-08-28 14:25:21 +0000 UTC,install dependencies
+29406233233,10606403153,1,completed,success,"Linting",2024-08-28 14:25:22 +0000 UTC,2024-08-28 14:26:22 +0000 UTC,run ESLint
+29406233394,10606403153,1,completed,success,"Linting",2024-08-28 14:26:23 +0000 UTC,2024-08-28 14:27:23 +0000 UTC,run Prettier
+29404880419,10605879351,1,completed,success,"CodeQL",2024-08-28 13:26:17 +0000 UTC,2024-08-28 13:26:47 +0000 UTC,initialize CodeQL
+29404880579,10605879351,1,completed,success,"CodeQL",2024-08-28 13:26:48 +0000 UTC,2024-08-28 13:31:48 +0000 UTC,perform CodeQL analysis
+29404880740,10605879351,1,completed,success,"CodeQL",2024-08-28 13:31:49 +0000 UTC,2024-08-28 13:32:19 +0000 UTC,upload SARIF results
+29403527765,10605355549,1,completed,failure,"Linting",2024-08-28 12:27:43 +0000 UTC,2024-08-28 12:28:13 +0000 UTC,install dependencies
+29403527925,10605355549,1,completed,failure,"Linting",2024-08-28 12:28:14 +0000 UTC,2024-08-28 12:29:14 +0000 UTC,run ESLint
+29403528086,10605355549,1,cancelled,failure,"Linting",2024-08-28 12:29:15 +0000 UTC,2024-08-28 12:29:45 +0000 UTC,run Prettier
+29402175111,10604831747,1,completed,success,"CodeQL",2024-08-28 11:29:09 +0000 UTC,2024-08-28 11:29:39 +0000 UTC,initialize CodeQL
+29402175271,10604831747,1,completed,success,"CodeQL",2024-08-28 11:29:40 +0000 UTC,2024-08-28 11:34:40 +0000 UTC,perform CodeQL analysis
+29402175432,10604831747,1,completed,success,"CodeQL",2024-08-28 11:34:41 +0000 UTC,2024-08-28 11:35:11 +0000 UTC,upload SARIF results
+29400822457,10604307945,1,completed,success,"Linting",2024-08-28 10:30:35 +0000 UTC,2024-08-28 10:31:05 +0000 UTC,install dependencies
+29400822617,10604307945,1,completed,success,"Linting",2024-08-28 10:31:06 +0000 UTC,2024-08-28 10:32:06 +0000 UTC,run ESLint
+29400822778,10604307945,1,completed,success,"Linting",2024-08-28 10:32:07 +0000 UTC,2024-08-28 10:33:07 +0000 UTC,run Prettier
+29399469803,10603784143,1,completed,failure,"CodeQL",2024-08-28 09:32:01 +0000 UTC,2024-08-28 09:32:31 +0000 UTC,initialize CodeQL
+29399469963,10603784143,1,completed,failure,"CodeQL",2024-08-28 09:32:32 +0000 UTC,2024-08-28 09:37:32 +0000 UTC,perform CodeQL analysis
+29399470124,10603784143,1,skipped,failure,"CodeQL",2024-08-28 09:37:33 +0000 UTC,2024-08-28 09:37:33 +0000 UTC,upload SARIF results
+29398117149,10603260341,1,completed,success,"Linting",2024-08-28 08:33:27 +0000 UTC,2024-08-28 08:33:57 +0000 UTC,install dependencies
+29398117309,10603260341,1,completed,success,"Linting",2024-08-28 08:33:58 +0000 UTC,2024-08-28 08:34:58 +0000 UTC,run ESLint
+29398117470,10603260341,1,completed,success,"Linting",2024-08-28 08:34:59 +0000 UTC,2024-08-28 08:35:59 +0000 UTC,run Prettier
+29396764495,10602736539,1,completed,success,"CodeQL",2024-08-28 07:34:53 +0000 UTC,2024-08-28 07:35:23 +0000 UTC,initialize CodeQL
+29396764655,10602736539,1,completed,success,"CodeQL",2024-08-28 07:35:24 +0000 UTC,2024-08-28 07:40:24 +0000 UTC,perform CodeQL analysis
+29396764816,10602736539,1,completed,success,"CodeQL",2024-08-28 07:40:25 +0000 UTC,2024-08-28 07:40:55 +0000 UTC,upload SARIF results
+29395411841,10602212737,1,completed,failure,"Linting",2024-08-28 06:36:19 +0000 UTC,2024-08-28 06:36:49 +0000 UTC,install dependencies
+29395412001,10602212737,1,completed,failure,"Linting",2024-08-28 06:36:50 +0000 UTC,2024-08-28 06:37:50 +0000 UTC,run ESLint
+29395412162,10602212737,1,cancelled,failure,"Linting",2024-08-28 06:37:51 +0000 UTC,2024-08-28 06:38:21 +0000 UTC,run Prettier
+29394059187,10601688935,1,completed,success,"CodeQL",2024-08-28 05:37:45 +0000 UTC,2024-08-28 05:38:15 +0000 UTC,initialize CodeQL
+29394059347,10601688935,1,completed,success,"CodeQL",2024-08-28 05:38:16 +0000 UTC,2024-08-28 05:43:16 +0000 UTC,perform CodeQL analysis
+29394059508,10601688935,1,completed,success,"CodeQL",2024-08-28 05:43:17 +0000 UTC,2024-08-28 05:43:47 +0000 UTC,upload SARIF results
+29392706533,10601165133,1,completed,success,"Linting",2024-08-28 04:39:11 +0000 UTC,2024-08-28 04:39:41 +0000 UTC,install dependencies
+29392706693,10601165133,1,completed,success,"Linting",2024-08-28 04:39:42 +0000 UTC,2024-08-28 04:40:42 +0000 UTC,run ESLint
+29392706854,10601165133,1,completed,success,"Linting",2024-08-28 04:40:43 +0000 UTC,2024-08-28 04:41:43 +0000 UTC,run Prettier
+29391353879,10600641331,1,completed,failure,"CodeQL",2024-08-28 03:40:37 +0000 UTC,2024-08-28 03:41:07 +0000 UTC,initialize CodeQL
+29391354039,10600641331,1,completed,failure,"CodeQL",2024-08-28 03:41:08 +0000 UTC,2024-08-28 03:46:08 +0000 UTC,perform CodeQL analysis
+29391354200,10600641331,1,skipped,failure,"CodeQL",2024-08-28 03:46:09 +0000 UTC,2024-08-28 03:46:09 +0000 UTC,upload SARIF results
+29390001225,10600117529,1,completed,success,"Linting",2024-08-28 02:42:03 +0000 UTC,2024-08-28 02:42:33 +0000 UTC,install dependencies
+29390001385,10600117529,1,completed,success,"Linting",2024-08-28 02:42:34 +0000 UTC,2024-08-28 02:43:34 +0000 UTC,run ESLint
+29390001546,10600117529,1,completed,success,"Linting",2024-08-28 02:43:35 +0000 UTC,2024-08-28 02:44:35 +0000 UTC,run Prettier

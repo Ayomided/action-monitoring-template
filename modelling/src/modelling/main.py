@@ -1,11 +1,8 @@
 import pandas as pd
 import numpy as np
-from pandas import Timestamp
 from sklearn.ensemble import RandomForestClassifier, RandomForestRegressor
 from sklearn.metrics import accuracy_score, mean_squared_error
 from sklearn.model_selection import train_test_split, cross_val_score
-from sklearn.preprocessing import  LabelEncoder
-import tensorflow as tf
 import dask.dataframe as dd
 import warnings                        # To ignore any warnings
 warnings.filterwarnings("ignore")
@@ -22,7 +19,7 @@ class WorkflowModelTrainer:
     def __init__(self, data_path:str) -> None:
         logger.info(f"Starting data preprocessing from file: {data_path}")
         logger.info("Loading data with Dask")
-        self.data = pd.read_csv(data_path)
+        self.data = pd.read_csv(data_path).dropna()
         logger.info(f"Loaded {len(self.data)} rows of data")
         self.X = None
         self.y = None
@@ -30,6 +27,8 @@ class WorkflowModelTrainer:
 
     def prepocess_data(self):
         logger.info("Converting datetime columns")
+        # self.data['StartedAt'] = dd.to_datetime(self.data['StartedAt'], utc=True).dt.tz_localize(None)
+        # self.data['CompletedAt'] = dd.to_datetime(self.data['CompletedAt'], utc=True).dt.tz_localize(None)
         self.data['StartedAt'] = self.data['StartedAt'].apply(parse_time)
         self.data['CompletedAt'] = self.data['CompletedAt'].apply(parse_time)
 
@@ -51,10 +50,10 @@ class WorkflowModelTrainer:
         self.X = self.data[['StatusEncoded', 'ExecutionTime']]
         self.y = (self.data['Conclusion'] == 'success').astype(int)
 
-        self.data.to_csv('workflow_data.csv', index=False)
-
         logger.info("Sorting data by StartedAt")
         self.sequence_data = self.data.sort_values('StartedAt')[['StatusEncoded', 'ExecutionTime', 'SuccessEncoded']]
+
+        self.data.to_csv("workflow_data.csv", index=False)
 
         logger.info("Computing final DataFrame")
         self.sequence_data_pd = self.sequence_data
@@ -98,8 +97,6 @@ class WorkflowModelTrainer:
 
         y_pred = rf_model.predict(X_test)
         accuracy = accuracy_score(y_test, y_pred)
-        # print('Random Forest Model: ')
-        # print(f"Accuracy: {accuracy}")
         logger.info(f"Accuracy: {accuracy}")
 
         self.models['random_forest'] = rf_model
@@ -114,7 +111,6 @@ class WorkflowModelTrainer:
         # Evaluate model
         y_pred = regression_model.predict(X_test)
         mse = mean_squared_error(y_test, y_pred)
-        # print(f"Mean Squared Error: {mse}")
         logger.info("The Mean Squared Error: {}".format(mse))
 
         # Cross-validation
@@ -123,8 +119,6 @@ class WorkflowModelTrainer:
         logger.info(f"Mean CV score: {np.mean(cv_scores)}")
         logger.info("-------------------------------")
         logger.info("End Regression")
-        # print(f"Cross-validation scores: {cv_scores}")
-        # print(f"Mean CV score: {np.mean(cv_scores)}")
 
         self.models['regression'] = regression_model
 
@@ -174,6 +168,7 @@ class WorkflowModelTrainer:
 
         logger.info("Time Series Forecasting Model (Prophet) trained successfully.")
         logger.info("-------------------------------")
+        logger.info(f"Forecast: {forecast}")
         logger.info("End Prophet")
         self.models['prophet'] = model
 
@@ -187,15 +182,14 @@ class WorkflowModelTrainer:
     def train_all_models(self):
         logger.info("Start training")
         self.prepocess_data()
-        self.train_rnn()
         self.train_random_forest()
-        self.train_time_series()
         self.train_regression_model()
+        self.train_rnn()
+        self.train_time_series()
         logger.info("-------------------------------")
         logger.info("Models Succesfully Trained")
 
 
-# trainer = WorkflowModelTrainer('all_steps.csv')
 logger = log(path="", file="training.logs")
 trainer = WorkflowModelTrainer('all_steps.csv')
 trainer.train_all_models()

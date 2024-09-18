@@ -187,3 +187,440 @@ INFO: 2024-09-16 13:10:16,392: -------------------------------
 INFO: 2024-09-16 13:10:16,392: End Regression
 INFO: 2024-09-16 13:10:16,392: -------------------------------
 INFO: 2024-09-16 13:10:16,392: Models Succesfully Trained
+INFO: 2024-09-17 10:35:01,666: Starting data preprocessing from file: merged_data.csv
+INFO: 2024-09-17 10:35:01,667: Loading data with Dask
+INFO: 2024-09-17 10:35:09,577: Loaded 6873769 rows of data
+INFO: 2024-09-17 10:35:09,580: Start training
+INFO: 2024-09-17 10:35:09,580: Converting datetime columns
+INFO: 2024-09-17 10:36:03,716: Starting data preprocessing from file: merged_data.csv
+INFO: 2024-09-17 10:36:03,716: Loading data with Dask
+INFO: 2024-09-17 10:36:12,119: Loaded 6873769 rows of data
+INFO: 2024-09-17 10:36:12,121: Start training
+INFO: 2024-09-17 10:36:12,121: Converting datetime columns
+INFO: 2024-09-17 10:37:38,354: Starting data preprocessing from file: merged_data.csv
+INFO: 2024-09-17 10:37:38,354: Loading data with Dask
+INFO: 2024-09-17 10:37:46,676: Loaded 6873769 rows of data
+INFO: 2024-09-17 10:37:46,679: Start training
+INFO: 2024-09-17 10:37:46,680: Converting datetime columns
+INFO: 2024-09-17 10:38:47,991: Preprocesing complete
+INFO: 2024-09-17 10:38:47,994: Start RNN
+INFO: 2024-09-17 10:38:48,588: Preparing sequences with length: 10
+INFO: 2024-09-17 10:54:22,347: Created sequences. X shape: (6873759, 10, 2), y shape: (6873759,)
+INFO: 2024-09-17 10:54:22,350: Normalizing ExecutionTime
+INFO: 2024-09-17 10:54:23,021: Splitting data into train and test sets
+INFO: 2024-09-17 10:54:23,894: Train shapes - X: (5499007, 10, 2), y: (5499007,)
+INFO: 2024-09-17 10:54:23,894: Test shapes - X: (1374752, 10, 2), y: (1374752,)
+INFO: 2024-09-17 12:25:57,694: Starting data preprocessing from file: merged_data.csv
+INFO: 2024-09-17 12:25:57,694: Loading data with Dask
+INFO: 2024-09-17 12:26:07,119: Loaded 6873769 rows of data
+INFO: 2024-09-17 12:26:07,124: Start training
+INFO: 2024-09-17 12:26:07,124: Converting datetime columns
+INFO: 2024-09-17 12:27:00,266: Preprocesing complete
+INFO: 2024-09-17 12:27:00,267: Start RNN
+INFO: 2024-09-17 12:27:00,822: Preparing sequences with length: 10
+INFO: 2024-09-17 13:12:49,029: Created sequences. X shape: (6873759, 10, 2), y shape: (6873759,)
+INFO: 2024-09-17 13:12:49,032: Normalizing ExecutionTime
+INFO: 2024-09-17 13:12:49,779: Splitting data into train and test sets
+INFO: 2024-09-17 13:12:50,799: Train shapes - X: (5499007, 10, 2), y: (5499007,)
+INFO: 2024-09-17 13:12:50,799: Test shapes - X: (1374752, 10, 2), y: (1374752,)
+INFO: 2024-09-17 14:38:26,090: Starting data preprocessing from file: merged_data.csv
+INFO: 2024-09-17 14:38:26,090: Loading data with Dask
+INFO: 2024-09-17 14:38:38,017: Loaded 6873769 rows of data
+INFO: 2024-09-17 14:38:38,020: Start training
+INFO: 2024-09-17 14:38:38,020: Converting datetime columns
+INFO: 2024-09-17 14:39:50,264: Preprocesing complete
+INFO: 2024-09-17 14:39:50,270: Training Random Forest Model
+INFO: 2024-09-17 14:42:55,362: Accuracy: 0.9172797460491113
+INFO: 2024-09-17 14:42:55,378: Start Prophet
+INFO: 2024-09-17 14:50:54,073: Starting data preprocessing from file: merged_data.csv
+INFO: 2024-09-17 14:50:54,073: Loading data with Dask
+INFO: 2024-09-17 14:51:04,143: Loaded 6873769 rows of data
+INFO: 2024-09-17 14:51:04,146: Start training
+INFO: 2024-09-17 14:51:04,146: Converting datetime columns
+INFO: 2024-09-17 14:51:32,915: Preprocesing complete
+INFO: 2024-09-17 14:51:32,915: Training Random Forest Model
+INFO: 2024-09-17 14:54:24,343: Accuracy: 0.9172797460491113
+INFO: 2024-09-17 14:54:24,359: Start Prophet
+INFO: 2024-09-17 15:05:09,981: Chain [1] start processing
+INFO: 2024-09-17 15:23:18,417: Chain [1] done processing
+INFO: 2024-09-17 15:27:08,045: Starting data preprocessing from file: merged_data.csv
+INFO: 2024-09-17 15:27:08,045: Loading data with Dask
+INFO: 2024-09-17 15:27:17,937: Loaded 6873769 rows of data
+INFO: 2024-09-17 15:27:17,939: Start training
+INFO: 2024-09-17 15:27:17,939: Converting datetime columns
+INFO: 2024-09-17 15:27:51,055: Preprocesing complete
+INFO: 2024-09-17 15:27:51,057: Training Random Forest Model
+INFO: 2024-09-17 15:30:44,583: Accuracy: 0.9172797460491113
+INFO: 2024-09-17 15:30:44,600: Training Regression
+INFO: 2024-09-17 15:34:03,235: Starting data preprocessing from file: merged_data.csv
+INFO: 2024-09-17 15:34:03,235: Loading data with Dask
+INFO: 2024-09-17 15:34:13,371: Loaded 6873769 rows of data
+INFO: 2024-09-17 15:34:13,374: Start training
+INFO: 2024-09-17 15:34:13,374: Converting datetime columns
+INFO: 2024-09-17 15:34:42,076: Preprocesing complete
+INFO: 2024-09-17 15:34:42,077: Training Random Forest Model
+INFO: 2024-09-17 15:37:19,227: Accuracy: 0.9172797460491113
+INFO: 2024-09-17 15:37:19,242: Training Regression
+INFO: 2024-09-17 15:40:04,665: Starting data preprocessing from file: merged_data.csv
+INFO: 2024-09-17 15:40:04,665: Loading data with Dask
+INFO: 2024-09-17 15:40:14,011: Loaded 6873769 rows of data
+INFO: 2024-09-17 15:40:14,011: Start training
+INFO: 2024-09-17 15:40:14,011: Converting datetime columns
+INFO: 2024-09-17 15:40:44,315: Preprocesing complete
+INFO: 2024-09-17 15:40:44,318: Training Random Forest Model
+INFO: 2024-09-17 15:44:06,594: Starting data preprocessing from file: merged_data.csv
+INFO: 2024-09-17 15:44:06,594: Loading data with Dask
+INFO: 2024-09-17 15:44:15,345: Loaded 6873769 rows of data
+INFO: 2024-09-17 15:44:15,346: Start training
+INFO: 2024-09-17 15:44:15,346: Converting datetime columns
+INFO: 2024-09-17 15:44:44,757: Preprocesing complete
+INFO: 2024-09-17 15:44:44,759: Training Random Forest Model
+INFO: 2024-09-17 15:45:13,319: Starting data preprocessing from file: merged_data.csv
+INFO: 2024-09-17 15:45:13,319: Loading data with Dask
+INFO: 2024-09-17 15:45:25,377: Loaded 6872864 rows of data
+INFO: 2024-09-17 15:45:25,379: Start training
+INFO: 2024-09-17 15:45:25,379: Converting datetime columns
+INFO: 2024-09-17 15:45:40,020: Preprocesing complete
+INFO: 2024-09-17 15:45:40,021: Training Random Forest Model
+INFO: 2024-09-17 15:48:25,312: Accuracy: 0.917154636385263
+INFO: 2024-09-17 15:48:25,329: Training Regression
+INFO: 2024-09-17 15:51:19,999: The Mean Squared Error: 2010.4844811832456
+INFO: 2024-09-17 16:05:28,906: Cross-validation scores: [0.99999989 0.99999996 0.99999268 0.9595385  0.99993695]
+INFO: 2024-09-17 16:05:28,909: Mean CV score: 0.9918935975398652
+INFO: 2024-09-17 16:05:28,909: -------------------------------
+INFO: 2024-09-17 16:05:28,909: End Regression
+INFO: 2024-09-17 16:05:28,924: -------------------------------
+INFO: 2024-09-17 16:05:28,925: Models Succesfully Trained
+INFO: 2024-09-17 18:15:26,809: Starting data preprocessing from file: merged_data.csv
+INFO: 2024-09-17 18:15:26,809: Loading data with Dask
+INFO: 2024-09-17 18:15:38,221: Loaded 6872864 rows of data
+INFO: 2024-09-17 18:15:38,223: Start training
+INFO: 2024-09-17 18:15:38,223: Converting datetime columns
+INFO: 2024-09-17 18:15:51,575: Preprocesing complete
+INFO: 2024-09-17 18:15:51,576: Training Random Forest Model
+INFO: 2024-09-17 18:18:17,185: Accuracy: 0.917154636385263
+INFO: 2024-09-17 18:18:17,202: Training Regression
+INFO: 2024-09-17 18:21:35,415: The Mean Squared Error: 2010.4844811832456
+INFO: 2024-09-17 18:37:31,734: Cross-validation scores: [0.99999989 0.99999996 0.99999268 0.9595385  0.99993695]
+INFO: 2024-09-17 18:37:31,740: Mean CV score: 0.9918935975398652
+INFO: 2024-09-17 18:37:31,740: -------------------------------
+INFO: 2024-09-17 18:37:31,740: End Regression
+INFO: 2024-09-17 18:37:31,748: Start RNN
+INFO: 2024-09-17 18:37:32,367: Preparing sequences with length: 10
+INFO: 2024-09-17 18:53:24,773: Created sequences. X shape: (6873759, 10, 2), y shape: (6873759,)
+INFO: 2024-09-17 18:53:24,786: Normalizing ExecutionTime
+INFO: 2024-09-17 18:53:25,699: Splitting data into train and test sets
+INFO: 2024-09-17 18:53:26,755: Train shapes - X: (5499007, 10, 2), y: (5499007,)
+INFO: 2024-09-17 18:53:26,755: Test shapes - X: (1374752, 10, 2), y: (1374752,)
+INFO: 2024-09-17 19:49:12,086: Starting data preprocessing from file: merged_data.csv
+INFO: 2024-09-17 19:49:12,087: Loading data with Dask
+INFO: 2024-09-17 19:49:23,499: Loaded 6872864 rows of data
+INFO: 2024-09-17 19:49:23,502: Start training
+INFO: 2024-09-17 19:49:23,502: Converting datetime columns
+INFO: 2024-09-17 19:49:38,534: Preprocesing complete
+INFO: 2024-09-17 19:49:38,536: Training Random Forest Model
+INFO: 2024-09-17 19:52:11,431: Accuracy: 0.917154636385263
+INFO: 2024-09-17 19:52:11,448: Training Regression
+INFO: 2024-09-17 19:55:04,675: The Mean Squared Error: 2010.4844811832456
+INFO: 2024-09-17 20:09:15,439: Cross-validation scores: [0.99999989 0.99999996 0.99999268 0.9595385  0.99993695]
+INFO: 2024-09-17 20:09:15,442: Mean CV score: 0.9918935975398652
+INFO: 2024-09-17 20:09:15,442: -------------------------------
+INFO: 2024-09-17 20:09:15,442: End Regression
+INFO: 2024-09-17 20:09:15,456: Start Prophet
+INFO: 2024-09-17 20:17:23,637: Chain [1] start processing
+INFO: 2024-09-17 20:38:18,624: Chain [1] done processing
+INFO: 2024-09-17 21:59:42,377: Starting data preprocessing from file: merged_data.csv
+INFO: 2024-09-17 21:59:42,378: Loading data with Dask
+INFO: 2024-09-17 21:59:52,809: Loaded 6872864 rows of data
+INFO: 2024-09-17 21:59:52,812: Start training
+INFO: 2024-09-17 21:59:52,812: Converting datetime columns
+INFO: 2024-09-17 22:00:06,512: Preprocesing complete
+INFO: 2024-09-17 22:00:06,513: Start Prophet
+INFO: 2024-09-17 22:09:16,137: Chain [1] start processing
+INFO: 2024-09-17 22:40:42,675: Chain [1] done processing
+INFO: 2024-09-17 23:05:32,229: Starting data preprocessing from file: merged_data.csv
+INFO: 2024-09-17 23:05:32,230: Loading data with Dask
+INFO: 2024-09-17 23:05:42,361: Loaded 6872864 rows of data
+INFO: 2024-09-17 23:05:42,362: Start training
+INFO: 2024-09-17 23:05:42,362: Converting datetime columns
+INFO: 2024-09-17 23:05:55,151: Preprocesing complete
+INFO: 2024-09-17 23:05:55,151: Start Prophet
+INFO: 2024-09-17 23:14:37,711: Chain [1] start processing
+INFO: 2024-09-17 23:49:48,747: Chain [1] done processing
+INFO: 2024-09-18 01:34:08,136: Starting data preprocessing from file: all_steps.csv
+INFO: 2024-09-18 01:34:08,136: Loading data with Dask
+INFO: 2024-09-18 01:34:08,143: Loaded 530 rows of data
+INFO: 2024-09-18 01:34:08,143: Start training
+INFO: 2024-09-18 01:34:08,143: Converting datetime columns
+INFO: 2024-09-18 01:35:34,694: Starting data preprocessing from file: all_steps.csv
+INFO: 2024-09-18 01:35:34,694: Loading data with Dask
+INFO: 2024-09-18 01:35:34,699: Loaded 530 rows of data
+INFO: 2024-09-18 01:35:34,699: Start training
+INFO: 2024-09-18 01:35:34,699: Converting datetime columns
+INFO: 2024-09-18 01:35:55,667: Starting data preprocessing from file: all_steps.csv
+INFO: 2024-09-18 01:35:55,668: Loading data with Dask
+INFO: 2024-09-18 01:35:55,673: Loaded 530 rows of data
+INFO: 2024-09-18 01:35:55,673: Start training
+INFO: 2024-09-18 01:35:55,674: Converting datetime columns
+INFO: 2024-09-18 01:35:55,703: Calculating execution time
+INFO: 2024-09-18 01:35:55,704: Encoding categorical variables
+INFO: 2024-09-18 01:35:55,705: Unique status values: ['completed' 'cancelled' 'skipped']
+INFO: 2024-09-18 01:35:55,706: Encoding Success/Failure
+INFO: 2024-09-18 01:35:55,707: Sorting data by StartedAt
+INFO: 2024-09-18 01:35:55,708: Computing final DataFrame
+INFO: 2024-09-18 01:35:55,709: Columns in computed sequence data: Index(['StatusEncoded', 'ExecutionTime', 'SuccessEncoded'], dtype='object')
+INFO: 2024-09-18 01:35:55,710: Preprocessing complete. Final shape: (530, 3)
+INFO: 2024-09-18 01:35:55,710: Preprocesing complete
+INFO: 2024-09-18 01:35:55,710: Training Random Forest Model
+INFO: 2024-09-18 01:35:55,765: Accuracy: 0.8962264150943396
+INFO: 2024-09-18 01:35:55,765: Training Regression
+INFO: 2024-09-18 01:35:55,811: The Mean Squared Error: 0.3809886792452821
+INFO: 2024-09-18 01:35:56,054: Cross-validation scores: [0.9999979  0.99999731 0.99999871 0.99999796 0.60776125]
+INFO: 2024-09-18 01:35:56,054: Mean CV score: 0.9215506243483187
+INFO: 2024-09-18 01:35:56,054: -------------------------------
+INFO: 2024-09-18 01:35:56,054: End Regression
+INFO: 2024-09-18 01:35:56,054: Start RNN
+INFO: 2024-09-18 01:37:01,263: Starting data preprocessing from file: all_steps.csv
+INFO: 2024-09-18 01:37:01,263: Loading data with Dask
+INFO: 2024-09-18 01:37:01,269: Loaded 530 rows of data
+INFO: 2024-09-18 01:37:01,269: Start training
+INFO: 2024-09-18 01:37:01,269: Converting datetime columns
+INFO: 2024-09-18 01:37:01,299: Calculating execution time
+INFO: 2024-09-18 01:37:01,301: Encoding categorical variables
+INFO: 2024-09-18 01:37:01,302: Unique status values: ['completed' 'cancelled' 'skipped']
+INFO: 2024-09-18 01:37:01,303: Encoding Success/Failure
+INFO: 2024-09-18 01:37:01,303: Sorting data by StartedAt
+INFO: 2024-09-18 01:37:01,305: Computing final DataFrame
+INFO: 2024-09-18 01:37:01,307: Columns in computed sequence data: Index(['StatusEncoded', 'ExecutionTime', 'SuccessEncoded'], dtype='object')
+INFO: 2024-09-18 01:37:01,309: Preprocessing complete. Final shape: (530, 3)
+INFO: 2024-09-18 01:37:01,309: Preprocesing complete
+INFO: 2024-09-18 01:37:01,309: Training Random Forest Model
+INFO: 2024-09-18 01:37:01,363: Accuracy: 0.8962264150943396
+INFO: 2024-09-18 01:37:01,363: Training Regression
+INFO: 2024-09-18 01:37:01,409: The Mean Squared Error: 0.3809886792452821
+INFO: 2024-09-18 01:37:01,629: Cross-validation scores: [0.9999979  0.99999731 0.99999871 0.99999796 0.60776125]
+INFO: 2024-09-18 01:37:01,629: Mean CV score: 0.9215506243483187
+INFO: 2024-09-18 01:37:01,629: -------------------------------
+INFO: 2024-09-18 01:37:01,629: End Regression
+INFO: 2024-09-18 01:37:01,629: Start RNN
+INFO: 2024-09-18 01:37:01,629: Preparing sequences with length: 10
+INFO: 2024-09-18 01:37:01,697: Created sequences. X shape: (520, 10, 2), y shape: (520,)
+INFO: 2024-09-18 01:37:01,697: Normalizing ExecutionTime
+INFO: 2024-09-18 01:37:01,697: Splitting data into train and test sets
+INFO: 2024-09-18 01:37:01,698: Train shapes - X: (416, 10, 2), y: (416,)
+INFO: 2024-09-18 01:37:01,698: Test shapes - X: (104, 10, 2), y: (104,)
+INFO: 2024-09-18 01:37:05,208: Test accuracy: 0.8558 - Test loss: 0.4216
+INFO: 2024-09-18 01:37:05,209: -------------------------------
+INFO: 2024-09-18 01:37:05,209: End RNN
+INFO: 2024-09-18 01:37:05,209: Start Prophet
+INFO: 2024-09-18 01:37:05,239: Disabling yearly seasonality. Run prophet with yearly_seasonality=True to override this.
+INFO: 2024-09-18 01:37:05,239: Disabling weekly seasonality. Run prophet with weekly_seasonality=True to override this.
+INFO: 2024-09-18 01:37:05,249: Chain [1] start processing
+INFO: 2024-09-18 01:37:05,277: Chain [1] done processing
+INFO: 2024-09-18 01:37:05,312: Time Series Forecasting Model (Prophet) trained successfully.
+INFO: 2024-09-18 01:37:05,312: -------------------------------
+INFO: 2024-09-18 01:37:05,320: Forecast:                      ds       trend  yhat_lower  yhat_upper  ...  multiplicative_terms  multiplicative_terms_lower  multiplicative_terms_upper        yhat
+0   2024-08-28 02:42:03   -0.857422   -3.552227    1.935770  ...                   0.0                         0.0                         0.0   -0.721176
+1   2024-08-28 02:42:34   -0.856058   -3.445581    2.323894  ...                   0.0                         0.0                         0.0   -0.710381
+2   2024-08-28 02:43:35   -0.853373   -3.769262    2.159519  ...                   0.0                         0.0                         0.0   -0.689193
+3   2024-08-28 03:40:37   -0.702761   -2.313186    3.317556  ...                   0.0                         0.0                         0.0    0.313769
+4   2024-08-28 03:41:08   -0.701396   -2.504504    3.250090  ...                   0.0                         0.0                         0.0    0.320680
+..                  ...         ...         ...         ...  ...                   ...                         ...                         ...         ...
+188 2024-09-25 07:46:59  106.428050  104.667625  110.173565  ...                   0.0                         0.0                         0.0  107.313696
+189 2024-09-26 07:46:59  110.230918  108.164016  114.089567  ...                   0.0                         0.0                         0.0  111.116564
+190 2024-09-27 07:46:59  114.033786  112.074265  117.763240  ...                   0.0                         0.0                         0.0  114.919432
+191 2024-09-28 07:46:59  117.836654  115.903211  121.405575  ...                   0.0                         0.0                         0.0  118.722300
+192 2024-09-29 07:46:59  121.639522  119.706657  125.284447  ...                   0.0                         0.0                         0.0  122.525168
+
+[193 rows x 16 columns]
+INFO: 2024-09-18 01:37:05,320: End Prophet
+INFO: 2024-09-18 01:37:37,816: Starting data preprocessing from file: all_steps.csv
+INFO: 2024-09-18 01:37:37,816: Loading data with Dask
+INFO: 2024-09-18 01:37:37,821: Loaded 530 rows of data
+INFO: 2024-09-18 01:37:37,821: Start training
+INFO: 2024-09-18 01:37:37,821: Converting datetime columns
+INFO: 2024-09-18 01:37:37,851: Calculating execution time
+INFO: 2024-09-18 01:37:37,852: Encoding categorical variables
+INFO: 2024-09-18 01:37:37,853: Unique status values: ['completed' 'cancelled' 'skipped']
+INFO: 2024-09-18 01:37:37,854: Encoding Success/Failure
+INFO: 2024-09-18 01:37:37,855: Sorting data by StartedAt
+INFO: 2024-09-18 01:37:37,856: Computing final DataFrame
+INFO: 2024-09-18 01:37:37,858: Columns in computed sequence data: Index(['StatusEncoded', 'ExecutionTime', 'SuccessEncoded'], dtype='object')
+INFO: 2024-09-18 01:37:37,859: Preprocessing complete. Final shape: (530, 3)
+INFO: 2024-09-18 01:37:37,859: Preprocesing complete
+INFO: 2024-09-18 01:37:37,859: Training Random Forest Model
+INFO: 2024-09-18 01:37:37,914: Accuracy: 0.8962264150943396
+INFO: 2024-09-18 01:37:37,915: Training Regression
+INFO: 2024-09-18 01:37:37,959: The Mean Squared Error: 0.3809886792452821
+INFO: 2024-09-18 01:37:38,199: Cross-validation scores: [0.9999979  0.99999731 0.99999871 0.99999796 0.60776125]
+INFO: 2024-09-18 01:37:38,199: Mean CV score: 0.9215506243483187
+INFO: 2024-09-18 01:37:38,199: -------------------------------
+INFO: 2024-09-18 01:37:38,199: End Regression
+INFO: 2024-09-18 01:37:38,199: Start RNN
+INFO: 2024-09-18 01:37:38,199: Preparing sequences with length: 10
+INFO: 2024-09-18 01:37:38,265: Created sequences. X shape: (520, 10, 2), y shape: (520,)
+INFO: 2024-09-18 01:37:38,265: Normalizing ExecutionTime
+INFO: 2024-09-18 01:37:38,266: Splitting data into train and test sets
+INFO: 2024-09-18 01:37:38,266: Train shapes - X: (416, 10, 2), y: (416,)
+INFO: 2024-09-18 01:37:38,266: Test shapes - X: (104, 10, 2), y: (104,)
+INFO: 2024-09-18 01:37:44,732: Test accuracy: 0.9038 - Test loss: 0.2114
+INFO: 2024-09-18 01:37:44,732: -------------------------------
+INFO: 2024-09-18 01:37:44,732: End RNN
+INFO: 2024-09-18 01:37:44,732: Start Prophet
+INFO: 2024-09-18 01:37:44,763: Disabling yearly seasonality. Run prophet with yearly_seasonality=True to override this.
+INFO: 2024-09-18 01:37:44,763: Disabling weekly seasonality. Run prophet with weekly_seasonality=True to override this.
+INFO: 2024-09-18 01:37:44,774: Chain [1] start processing
+INFO: 2024-09-18 01:37:44,806: Chain [1] done processing
+INFO: 2024-09-18 01:37:44,844: Time Series Forecasting Model (Prophet) trained successfully.
+INFO: 2024-09-18 01:37:44,844: -------------------------------
+INFO: 2024-09-18 01:37:44,852: Forecast:                      ds       trend  yhat_lower  yhat_upper  ...  multiplicative_terms  multiplicative_terms_lower  multiplicative_terms_upper        yhat
+0   2024-08-28 02:42:03   -0.857422   -3.776402    2.205131  ...                   0.0                         0.0                         0.0   -0.721176
+1   2024-08-28 02:42:34   -0.856058   -3.263475    2.142543  ...                   0.0                         0.0                         0.0   -0.710381
+2   2024-08-28 02:43:35   -0.853373   -3.431209    2.126443  ...                   0.0                         0.0                         0.0   -0.689193
+3   2024-08-28 03:40:37   -0.702761   -2.531916    3.046089  ...                   0.0                         0.0                         0.0    0.313769
+4   2024-08-28 03:41:08   -0.701396   -2.453171    3.070000  ...                   0.0                         0.0                         0.0    0.320680
+..                  ...         ...         ...         ...  ...                   ...                         ...                         ...         ...
+188 2024-09-25 07:46:59  106.428050  104.501122  110.035130  ...                   0.0                         0.0                         0.0  107.313696
+189 2024-09-26 07:46:59  110.230918  108.271280  114.077851  ...                   0.0                         0.0                         0.0  111.116564
+190 2024-09-27 07:46:59  114.033786  111.984663  117.685960  ...                   0.0                         0.0                         0.0  114.919432
+191 2024-09-28 07:46:59  117.836654  116.080059  121.631245  ...                   0.0                         0.0                         0.0  118.722300
+192 2024-09-29 07:46:59  121.639522  119.529169  125.450954  ...                   0.0                         0.0                         0.0  122.525168
+
+[193 rows x 16 columns]
+INFO: 2024-09-18 01:37:44,853: End Prophet
+INFO: 2024-09-18 01:37:44,853: -------------------------------
+INFO: 2024-09-18 01:37:44,853: Models Succesfully Trained
+INFO: 2024-09-18 01:37:44,921: Start Prophet
+INFO: 2024-09-18 01:37:44,923: Disabling yearly seasonality. Run prophet with yearly_seasonality=True to override this.
+INFO: 2024-09-18 01:37:44,923: Disabling weekly seasonality. Run prophet with weekly_seasonality=True to override this.
+INFO: 2024-09-18 01:37:44,929: Chain [1] start processing
+INFO: 2024-09-18 01:37:44,945: Chain [1] done processing
+INFO: 2024-09-18 01:37:44,979: Time Series Forecasting Model (Prophet) trained successfully.
+INFO: 2024-09-18 01:37:44,979: -------------------------------
+INFO: 2024-09-18 01:37:44,985: Forecast:                      ds       trend  yhat_lower  yhat_upper  ...  multiplicative_terms  multiplicative_terms_lower  multiplicative_terms_upper        yhat
+0   2024-08-28 02:42:03   -0.857422   -3.437154    2.148905  ...                   0.0                         0.0                         0.0   -0.721176
+1   2024-08-28 02:42:34   -0.856058   -3.562266    2.217862  ...                   0.0                         0.0                         0.0   -0.710381
+2   2024-08-28 02:43:35   -0.853373   -3.452003    1.957753  ...                   0.0                         0.0                         0.0   -0.689193
+3   2024-08-28 03:40:37   -0.702761   -2.415654    3.085140  ...                   0.0                         0.0                         0.0    0.313769
+4   2024-08-28 03:41:08   -0.701396   -2.577415    3.178941  ...                   0.0                         0.0                         0.0    0.320680
+..                  ...         ...         ...         ...  ...                   ...                         ...                         ...         ...
+188 2024-09-25 07:46:59  106.428050  104.440788  110.135023  ...                   0.0                         0.0                         0.0  107.313696
+189 2024-09-26 07:46:59  110.230918  108.273341  113.845983  ...                   0.0                         0.0                         0.0  111.116564
+190 2024-09-27 07:46:59  114.033786  112.039373  117.651389  ...                   0.0                         0.0                         0.0  114.919432
+191 2024-09-28 07:46:59  117.836654  115.936111  121.526303  ...                   0.0                         0.0                         0.0  118.722300
+192 2024-09-29 07:46:59  121.639522  119.659977  125.342145  ...                   0.0                         0.0                         0.0  122.525168
+
+[193 rows x 16 columns]
+INFO: 2024-09-18 01:37:44,985: End Prophet
+INFO: 2024-09-18 01:40:35,315: Starting data preprocessing from file: all_steps.csv
+INFO: 2024-09-18 01:40:35,315: Loading data with Dask
+INFO: 2024-09-18 01:40:35,320: Loaded 530 rows of data
+INFO: 2024-09-18 01:40:35,320: Start training
+INFO: 2024-09-18 01:40:35,320: Converting datetime columns
+INFO: 2024-09-18 01:40:35,347: Calculating execution time
+INFO: 2024-09-18 01:40:35,348: Encoding categorical variables
+INFO: 2024-09-18 01:40:35,349: Unique status values: ['completed' 'cancelled' 'skipped']
+INFO: 2024-09-18 01:40:35,351: Encoding Success/Failure
+INFO: 2024-09-18 01:40:35,351: Sorting data by StartedAt
+INFO: 2024-09-18 01:40:35,357: Computing final DataFrame
+INFO: 2024-09-18 01:40:35,357: Columns in computed sequence data: Index(['StatusEncoded', 'ExecutionTime', 'SuccessEncoded'], dtype='object')
+INFO: 2024-09-18 01:40:35,358: Preprocessing complete. Final shape: (530, 3)
+INFO: 2024-09-18 01:40:35,358: Preprocesing complete
+INFO: 2024-09-18 01:40:35,358: Training Random Forest Model
+INFO: 2024-09-18 01:40:35,411: Accuracy: 0.8962264150943396
+INFO: 2024-09-18 01:40:35,411: Training Regression
+INFO: 2024-09-18 01:40:35,454: The Mean Squared Error: 0.3809886792452821
+INFO: 2024-09-18 01:40:35,663: Cross-validation scores: [0.9999979  0.99999731 0.99999871 0.99999796 0.60776125]
+INFO: 2024-09-18 01:40:35,663: Mean CV score: 0.9215506243483187
+INFO: 2024-09-18 01:40:35,663: -------------------------------
+INFO: 2024-09-18 01:40:35,663: End Regression
+INFO: 2024-09-18 01:40:35,663: Start RNN
+INFO: 2024-09-18 01:40:35,663: Preparing sequences with length: 10
+INFO: 2024-09-18 01:40:35,727: Created sequences. X shape: (520, 10, 2), y shape: (520,)
+INFO: 2024-09-18 01:40:35,727: Normalizing ExecutionTime
+INFO: 2024-09-18 01:40:35,727: Splitting data into train and test sets
+INFO: 2024-09-18 01:40:35,728: Train shapes - X: (416, 10, 2), y: (416,)
+INFO: 2024-09-18 01:40:35,728: Test shapes - X: (104, 10, 2), y: (104,)
+INFO: 2024-09-18 01:40:38,982: Test accuracy: 0.8558 - Test loss: 0.4199
+INFO: 2024-09-18 01:40:38,982: -------------------------------
+INFO: 2024-09-18 01:40:38,982: End RNN
+INFO: 2024-09-18 01:40:38,982: Start Prophet
+INFO: 2024-09-18 01:40:39,006: Disabling yearly seasonality. Run prophet with yearly_seasonality=True to override this.
+INFO: 2024-09-18 01:40:39,006: Disabling weekly seasonality. Run prophet with weekly_seasonality=True to override this.
+INFO: 2024-09-18 01:40:39,016: Chain [1] start processing
+INFO: 2024-09-18 01:40:39,050: Chain [1] done processing
+INFO: 2024-09-18 01:40:39,086: Time Series Forecasting Model (Prophet) trained successfully.
+INFO: 2024-09-18 01:40:39,086: -------------------------------
+INFO: 2024-09-18 01:40:39,094: Forecast:                      ds       trend  yhat_lower  yhat_upper  ...  multiplicative_terms  multiplicative_terms_lower  multiplicative_terms_upper        yhat
+0   2024-08-28 02:42:03   -0.857422   -3.453320    2.299158  ...                   0.0                         0.0                         0.0   -0.721176
+1   2024-08-28 02:42:34   -0.856058   -3.641821    2.214347  ...                   0.0                         0.0                         0.0   -0.710381
+2   2024-08-28 02:43:35   -0.853373   -3.619275    2.190559  ...                   0.0                         0.0                         0.0   -0.689193
+3   2024-08-28 03:40:37   -0.702761   -2.518720    3.049508  ...                   0.0                         0.0                         0.0    0.313769
+4   2024-08-28 03:41:08   -0.701396   -2.320645    2.778487  ...                   0.0                         0.0                         0.0    0.320680
+..                  ...         ...         ...         ...  ...                   ...                         ...                         ...         ...
+188 2024-09-25 07:46:59  106.428050  104.578070  110.142203  ...                   0.0                         0.0                         0.0  107.313696
+189 2024-09-26 07:46:59  110.230918  108.137080  113.705081  ...                   0.0                         0.0                         0.0  111.116564
+190 2024-09-27 07:46:59  114.033786  112.057732  117.788712  ...                   0.0                         0.0                         0.0  114.919432
+191 2024-09-28 07:46:59  117.836654  115.849600  121.454008  ...                   0.0                         0.0                         0.0  118.722300
+192 2024-09-29 07:46:59  121.639522  119.876316  125.094542  ...                   0.0                         0.0                         0.0  122.525168
+
+[193 rows x 16 columns]
+INFO: 2024-09-18 01:40:39,094: End Prophet
+INFO: 2024-09-18 01:40:39,094: -------------------------------
+INFO: 2024-09-18 01:40:39,094: Models Succesfully Trained
+INFO: 2024-09-18 01:55:18,585: Starting data preprocessing from file: all_steps.csv
+INFO: 2024-09-18 01:55:18,585: Loading data with Dask
+INFO: 2024-09-18 01:55:18,591: Loaded 530 rows of data
+INFO: 2024-09-18 01:55:18,591: Start training
+INFO: 2024-09-18 01:55:18,591: Converting datetime columns
+INFO: 2024-09-18 01:55:18,620: Calculating execution time
+INFO: 2024-09-18 01:55:18,621: Encoding categorical variables
+INFO: 2024-09-18 01:55:18,622: Unique status values: ['completed' 'cancelled' 'skipped']
+INFO: 2024-09-18 01:55:18,623: Encoding Success/Failure
+INFO: 2024-09-18 01:55:18,624: Sorting data by StartedAt
+INFO: 2024-09-18 01:55:18,629: Computing final DataFrame
+INFO: 2024-09-18 01:55:18,629: Columns in computed sequence data: Index(['StatusEncoded', 'ExecutionTime', 'SuccessEncoded'], dtype='object')
+INFO: 2024-09-18 01:55:18,631: Preprocessing complete. Final shape: (530, 3)
+INFO: 2024-09-18 01:55:18,631: Preprocesing complete
+INFO: 2024-09-18 01:55:18,631: Training Random Forest Model
+INFO: 2024-09-18 01:55:18,685: Accuracy: 0.8962264150943396
+INFO: 2024-09-18 01:55:18,685: Training Regression
+INFO: 2024-09-18 01:55:18,729: The Mean Squared Error: 0.3809886792452821
+INFO: 2024-09-18 01:55:18,949: Cross-validation scores: [0.9999979  0.99999731 0.99999871 0.99999796 0.60776125]
+INFO: 2024-09-18 01:55:18,950: Mean CV score: 0.9215506243483187
+INFO: 2024-09-18 01:55:18,950: -------------------------------
+INFO: 2024-09-18 01:55:18,950: End Regression
+INFO: 2024-09-18 01:55:18,950: Start RNN
+INFO: 2024-09-18 01:55:18,950: Preparing sequences with length: 10
+INFO: 2024-09-18 01:55:19,019: Created sequences. X shape: (520, 10, 2), y shape: (520,)
+INFO: 2024-09-18 01:55:19,019: Normalizing ExecutionTime
+INFO: 2024-09-18 01:55:19,019: Splitting data into train and test sets
+INFO: 2024-09-18 01:55:19,019: Train shapes - X: (416, 10, 2), y: (416,)
+INFO: 2024-09-18 01:55:19,019: Test shapes - X: (104, 10, 2), y: (104,)
+INFO: 2024-09-18 01:55:25,616: Test accuracy: 0.9038 - Test loss: 0.2614
+INFO: 2024-09-18 01:55:25,618: -------------------------------
+INFO: 2024-09-18 01:55:25,618: End RNN
+INFO: 2024-09-18 01:55:25,618: Start Prophet
+INFO: 2024-09-18 01:55:25,701: Disabling yearly seasonality. Run prophet with yearly_seasonality=True to override this.
+INFO: 2024-09-18 01:55:25,701: Disabling weekly seasonality. Run prophet with weekly_seasonality=True to override this.
+INFO: 2024-09-18 01:55:25,714: Chain [1] start processing
+INFO: 2024-09-18 01:55:25,741: Chain [1] done processing
+INFO: 2024-09-18 01:55:25,779: Time Series Forecasting Model (Prophet) trained successfully.
+INFO: 2024-09-18 01:55:25,779: -------------------------------
+INFO: 2024-09-18 01:55:25,789: Forecast:                      ds       trend  yhat_lower  yhat_upper  ...  multiplicative_terms  multiplicative_terms_lower  multiplicative_terms_upper        yhat
+0   2024-08-28 02:42:03   -0.857422   -3.616566    2.156934  ...                   0.0                         0.0                         0.0   -0.721176
+1   2024-08-28 02:42:34   -0.856058   -3.447970    2.211896  ...                   0.0                         0.0                         0.0   -0.710381
+2   2024-08-28 02:43:35   -0.853373   -3.621759    2.118247  ...                   0.0                         0.0                         0.0   -0.689193
+3   2024-08-28 03:40:37   -0.702761   -2.570788    3.269967  ...                   0.0                         0.0                         0.0    0.313769
+4   2024-08-28 03:41:08   -0.701396   -2.485362    3.314663  ...                   0.0                         0.0                         0.0    0.320680
+..                  ...         ...         ...         ...  ...                   ...                         ...                         ...         ...
+188 2024-09-25 07:46:59  106.428050  104.357831  110.208730  ...                   0.0                         0.0                         0.0  107.313696
+189 2024-09-26 07:46:59  110.230918  108.109803  114.031641  ...                   0.0                         0.0                         0.0  111.116564
+190 2024-09-27 07:46:59  114.033786  112.028483  117.748876  ...                   0.0                         0.0                         0.0  114.919432
+191 2024-09-28 07:46:59  117.836654  115.859813  121.505657  ...                   0.0                         0.0                         0.0  118.722300
+192 2024-09-29 07:46:59  121.639522  119.632524  125.464717  ...                   0.0                         0.0                         0.0  122.525168
+
+[193 rows x 16 columns]
+INFO: 2024-09-18 01:55:25,789: End Prophet
+INFO: 2024-09-18 01:55:25,789: -------------------------------
+INFO: 2024-09-18 01:55:25,789: Models Succesfully Trained

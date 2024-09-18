@@ -5,7 +5,6 @@ MINE
 *.joblib
 *.keras
 workflow_models_prophet.json
-*.csv
 *.logs
 __pycache__
 .venv
